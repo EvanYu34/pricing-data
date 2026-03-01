@@ -1,0 +1,161 @@
+name: Update AI Pricing Data
+
+on:
+  schedule:
+    # 每周一 UTC 00:00 运行
+    - cron: "0 0 * * 1"
+  # 支持手动触发
+  workflow_dispatch:
+
+jobs:
+  # ======================================================================
+  # Job 1：抓取定价数据
+  # ======================================================================
+  update-pricing:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # ----------------------------------------------------------------
+      # 1. Checkout
+      # ----------------------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      # ----------------------------------------------------------------
+      # 2. Python 环境
+      # ----------------------------------------------------------------
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install Python dependencies
+        run: pip install --upgrade pip && pip install -r requirements.txt
+
+      # ----------------------------------------------------------------
+      # 3. Playwright 浏览器（仅安装 Chromium，节省时间）
+      # ----------------------------------------------------------------
+      - name: Install Playwright Chromium + system dependencies
+        run: |
+          python -m playwright install chromium
+          python -m playwright install-deps chromium
+
+      # ----------------------------------------------------------------
+      # 4. 运行定价数据抓取
+      #    continue-on-error：部分平台失败时仍继续后续步骤
+      # ----------------------------------------------------------------
+      - name: Run pricing scraper
+        id: scrape
+        run: python main.py
+        continue-on-error: true
+        env:
+          PYTHONUNBUFFERED: "1"
+          # GITHUB_ACTIONS=true 由 GitHub 自动注入，Playwright 因此自动启用
+
+      # ----------------------------------------------------------------
+      # 5. 检查 pricing.json 是否有变化
+      # ----------------------------------------------------------------
+      - name: Check for changes to pricing.json
+        id: check_changes
+        run: |
+          if git diff --quiet pricing.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "pricing.json 未变化，无需提交"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "pricing.json 有变化："
+            git diff --stat pricing.json
+          fi
+
+      # ----------------------------------------------------------------
+      # 6. 提交并推送（仅在有变化时）
+      # ----------------------------------------------------------------
+      - name: Commit and push updated pricing.json
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          git add pricing.json
+
+          COMMIT_MSG=$(cat .commit_message 2>/dev/null \
+            || echo "chore: update pricing data $(date -u +%Y-%m-%d)")
+
+          git commit -m "$COMMIT_MSG"
+          git push
+
+      # ----------------------------------------------------------------
+      # 7. 运行能力审计
+      #    --fetch：联网抓取文档页，推断更准确
+      #    不使用 --fail-on-diff，审计结果仅作参考，不阻断工作流
+      # ----------------------------------------------------------------
+      - name: Run capability audit
+        id: audit
+        if: always()
+        run: |
+          python scripts/audit_capabilities.py \
+            --fetch \
+            --output AUDIT_REPORT.md
+        continue-on-error: true
+        env:
+          PYTHONUNBUFFERED: "1"
+
+      # ----------------------------------------------------------------
+      # 8. 将审计报告写入 GitHub Actions Job Summary
+      #    人工在 Actions 页面即可查看，无需拉取代码
+      # ----------------------------------------------------------------
+      - name: Write audit report to Job Summary
+        if: always()
+        run: |
+          echo "## 📊 定价抓取摘要" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+
+          # ── 抓取结果 ──
+          if [ -f pricing.json ]; then
+            python - >> "$GITHUB_STEP_SUMMARY" <<'PYEOF'
+          import json
+          with open("pricing.json") as f:
+              data = json.load(f)
+          print(f"**更新时间**: {data.get('last_updated', 'n/a')}\n")
+          print("| 平台 | 状态 | 模型数 | 错误信息 |")
+          print("|---|---|---|---|")
+          for provider, info in data.get("sources", {}).items():
+              status   = info.get("fetch_status", "unknown")
+              n_models = len(info.get("models", []))
+              err      = info.get("error_message") or ""
+              icon     = "✅" if status == "success" else "❌"
+              print(f"| {provider} | {icon} {status} | {n_models} | {err} |")
+          PYEOF
+          else
+            echo "pricing.json 不存在" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "---" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+
+          # ── 审计报告 ──
+          if [ -f AUDIT_REPORT.md ]; then
+            cat AUDIT_REPORT.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "⚠️ 审计报告未生成" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      # ----------------------------------------------------------------
+      # 9. 若审计发现"需关注"差异，在工作流日志中打印醒目提示
+      #    （不阻断工作流，仅提示人工查看 Job Summary）
+      # ----------------------------------------------------------------
+      - name: Highlight audit warnings
+        if: always() && steps.audit.outcome != 'skipped'
+        run: |
+          if [ -f AUDIT_REPORT.md ] && grep -q "需关注" AUDIT_REPORT.md; then
+            echo "::warning title=能力审计::发现需关注的能力差异，请查看 Job Summary 中的审计报告"
+          else
+            echo "✅ 能力审计：未发现需关注的差异"
+          fi
