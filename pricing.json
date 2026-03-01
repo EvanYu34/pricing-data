@@ -1,5 +1,3218 @@
 {
-  "last_updated": "1970-01-01T00:00:00Z",
+  "last_updated": "2026-03-01T13:31:47Z",
   "schema_version": "2.0",
-  "sources": {}
+  "sources": {
+    "claude": {
+      "fetch_status": "success",
+      "error_message": null,
+      "provider_info": {
+        "name": "Anthropic",
+        "base_url": "https://api.anthropic.com",
+        "auth_method": "x-api-key",
+        "sdk_support": [
+          "anthropic"
+        ]
+      },
+      "models": [
+        {
+          "model_id": "claude-3-5-haiku-20241022",
+          "display_name": "Claude 3.5 Haiku",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "messages",
+              "path": "/v1/messages",
+              "notes": "Anthropic native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "claude-3-5-sonnet-20240620",
+          "display_name": "Claude 3.5 Sonnet (June 2024)",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "messages",
+              "path": "/v1/messages",
+              "notes": "Anthropic native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "claude-3-5-sonnet-20241022",
+          "display_name": "Claude 3.5 Sonnet",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "messages",
+              "path": "/v1/messages",
+              "notes": "Anthropic native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "claude-3-7-sonnet-20250219",
+          "display_name": "Claude 3.7 Sonnet",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "messages",
+              "path": "/v1/messages",
+              "notes": "Anthropic native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "claude-3-haiku-20240307",
+          "display_name": "Claude 3 Haiku",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "messages",
+              "path": "/v1/messages",
+              "notes": "Anthropic native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "claude-3-opus-20240229",
+          "display_name": "Claude 3 Opus",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "messages",
+              "path": "/v1/messages",
+              "notes": "Anthropic native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "claude-3-sonnet-20240229",
+          "display_name": "Claude 3 Sonnet",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "messages",
+              "path": "/v1/messages",
+              "notes": "Anthropic native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "claude-haiku-4-5",
+          "display_name": "Claude Haiku 4.5",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "messages",
+              "path": "/v1/messages",
+              "notes": "Anthropic native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "claude-haiku-4-5-20251001",
+          "display_name": "claude-haiku-4-5-20251001",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "messages",
+              "path": "/v1/messages",
+              "notes": "Anthropic native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "claude-haiku-4-5-20251001-v1",
+          "display_name": "claude-haiku-4-5-20251001-v1",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "image_understanding",
+            "document_processing",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "messages",
+              "path": "/v1/messages",
+              "notes": "Anthropic native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "claude-opus-4-5",
+          "display_name": "Claude Opus 4.5",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "messages",
+              "path": "/v1/messages",
+              "notes": "Anthropic native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "claude-opus-4-6",
+          "display_name": "Claude Opus 4.6",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "messages",
+              "path": "/v1/messages",
+              "notes": "Anthropic native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "claude-opus-4-6-v1",
+          "display_name": "claude-opus-4-6-v1",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "image_understanding",
+            "document_processing",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "messages",
+              "path": "/v1/messages",
+              "notes": "Anthropic native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "claude-sonnet-4-5",
+          "display_name": "Claude Sonnet 4.5",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "messages",
+              "path": "/v1/messages",
+              "notes": "Anthropic native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "claude-sonnet-4-6",
+          "display_name": "Claude Sonnet 4.6",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "messages",
+              "path": "/v1/messages",
+              "notes": "Anthropic native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        }
+      ]
+    },
+    "gemini": {
+      "fetch_status": "success",
+      "error_message": null,
+      "provider_info": {
+        "name": "Google",
+        "base_url": "https://generativelanguage.googleapis.com",
+        "auth_method": "google_api_key",
+        "sdk_support": [
+          "google-generativeai",
+          "openai"
+        ]
+      },
+      "models": [
+        {
+          "model_id": "batch",
+          "display_name": "batch",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": 0.0375,
+            "output_per_1m_tokens": 0.15,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "embedding-001",
+          "display_name": "Embedding 001",
+          "context_window_tokens": 2048,
+          "capabilities": [
+            "embedding"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "embeddings",
+              "path": "/v1beta/models/{model}:embedContent",
+              "notes": "Google native embedding format (legacy)"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini 2.5 flash",
+          "display_name": "gemini 2.5 flash",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini 2.5 flash livepreview",
+          "display_name": "gemini 2.5 flash livepreview",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini 2.5 flash ttspreview",
+          "display_name": "gemini 2.5 flash ttspreview",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_to_speech"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini 2.5 flash-lite",
+          "display_name": "gemini 2.5 flash-lite",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini 2.5 pro",
+          "display_name": "gemini 2.5 pro",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini 2.5 pro ttspreview",
+          "display_name": "gemini 2.5 pro ttspreview",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_to_speech"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini 3",
+          "display_name": "gemini 3",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini 3 flash",
+          "display_name": "gemini 3 flash",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini 3 pro",
+          "display_name": "gemini 3 pro",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini 3.1 pro",
+          "display_name": "gemini 3.1 pro",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini deep researchpreview",
+          "display_name": "gemini deep researchpreview",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini embeddings",
+          "display_name": "gemini embeddings",
+          "context_window_tokens": null,
+          "capabilities": [
+            "embedding"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini roboticspreview",
+          "display_name": "gemini roboticspreview",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini-1.0-pro",
+          "display_name": "Gemini 1.0 Pro",
+          "context_window_tokens": 32760,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini-1.5-flash",
+          "display_name": "Gemini 1.5 Flash",
+          "context_window_tokens": 1048576,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini-1.5-flash-002",
+          "display_name": "Gemini 1.5 Flash 002",
+          "context_window_tokens": 1048576,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini-1.5-flash-8b",
+          "display_name": "Gemini 1.5 Flash 8B",
+          "context_window_tokens": 1048576,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini-1.5-pro",
+          "display_name": "Gemini 1.5 Pro",
+          "context_window_tokens": 2097152,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini-1.5-pro-002",
+          "display_name": "Gemini 1.5 Pro 002",
+          "context_window_tokens": 2097152,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini-2.0-flash",
+          "display_name": "Gemini 2.0 Flash",
+          "context_window_tokens": 1048576,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini-2.0-flash-exp",
+          "display_name": "Gemini 2.0 Flash (Experimental)",
+          "context_window_tokens": 1048576,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini-2.0-flash-lite",
+          "display_name": "Gemini 2.0 Flash Lite",
+          "context_window_tokens": 1048576,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini-2.0-flash-thinking-exp",
+          "display_name": "Gemini 2.0 Flash Thinking (Experimental)",
+          "context_window_tokens": 1048576,
+          "capabilities": [
+            "text_generation",
+            "code_generation",
+            "image_understanding"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini-2.0-pro-exp",
+          "display_name": "Gemini 2.0 Pro (Experimental)",
+          "context_window_tokens": 2097152,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini-2.5-flash",
+          "display_name": "gemini-2.5-flash",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini-2.5-flash-preview-09-2025",
+          "display_name": "gemini-2.5-flash-preview-09-2025",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "imagen 4",
+          "display_name": "imagen 4",
+          "context_window_tokens": null,
+          "capabilities": [
+            "image_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "imagen-3.0-generate-001",
+          "display_name": "Imagen 3",
+          "context_window_tokens": null,
+          "capabilities": [
+            "image_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "images_generations",
+              "path": "/v1beta/models/{model}:predict",
+              "notes": "Google Vertex AI / AI Studio image generation"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "pricing for tools",
+          "display_name": "pricing for tools",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": 35.0,
+            "output_per_1m_tokens": 14.0,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "standard",
+          "display_name": "standard",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": 0.3,
+            "output_per_1m_tokens": 1.0,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "text-embedding-004",
+          "display_name": "Text Embedding 004",
+          "context_window_tokens": 2048,
+          "capabilities": [
+            "embedding"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "embeddings",
+              "path": "/v1beta/models/{model}:embedContent",
+              "notes": "Google native embedding format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        }
+      ]
+    },
+    "openai": {
+      "fetch_status": "success",
+      "error_message": null,
+      "provider_info": {
+        "name": "OpenAI",
+        "base_url": "https://api.openai.com",
+        "auth_method": "bearer_token",
+        "sdk_support": [
+          "openai"
+        ]
+      },
+      "models": [
+        {
+          "model_id": "dall-e-2",
+          "display_name": "DALL-E 2",
+          "context_window_tokens": null,
+          "capabilities": [
+            "image_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "images_generations",
+              "path": "/v1/images/generations",
+              "notes": "Returns image URLs or base64"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "Supports 256x256, 512x512, 1024x1024"
+        },
+        {
+          "model_id": "dall-e-3",
+          "display_name": "DALL-E 3",
+          "context_window_tokens": null,
+          "capabilities": [
+            "image_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "images_generations",
+              "path": "/v1/images/generations",
+              "notes": "Returns image URLs or base64; supports 1024x1024, 1792x1024, 1024x1792"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "Supports 1024x1024, 1792x1024, 1024x1792"
+        },
+        {
+          "model_id": "gpt-3",
+          "display_name": "gpt-3",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-3.5",
+          "display_name": "gpt-3.5",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "transcription",
+            "text_to_speech",
+            "image_generation",
+            "code_generation",
+            "embedding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-3.5-turbo",
+          "display_name": "GPT-3.5 Turbo",
+          "context_window_tokens": 16385,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-3.5-turbo-0125",
+          "display_name": "GPT-3.5 Turbo (Jan 2024)",
+          "context_window_tokens": 16385,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-4",
+          "display_name": "GPT-4",
+          "context_window_tokens": 8192,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-4-0613",
+          "display_name": "GPT-4 (Jun 2023)",
+          "context_window_tokens": 8192,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-4-turbo",
+          "display_name": "GPT-4 Turbo",
+          "context_window_tokens": 128000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-4-turbo-2024-04-09",
+          "display_name": "GPT-4 Turbo (Apr 2024)",
+          "context_window_tokens": 128000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-4-turbo-preview",
+          "display_name": "GPT-4 Turbo Preview",
+          "context_window_tokens": 128000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-4.1",
+          "display_name": "gpt-4.1",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "text_to_speech",
+            "image_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-4.5",
+          "display_name": "gpt-4.5",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-4o",
+          "display_name": "GPT-4o",
+          "context_window_tokens": 128000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-4o-2024-05-13",
+          "display_name": "GPT-4o (May 2024)",
+          "context_window_tokens": 128000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-4o-2024-08-06",
+          "display_name": "GPT-4o (Aug 2024)",
+          "context_window_tokens": 128000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-4o-2024-11-20",
+          "display_name": "GPT-4o (Nov 2024)",
+          "context_window_tokens": 128000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "document_processing",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-4o-audio-preview",
+          "display_name": "GPT-4o Audio Preview",
+          "context_window_tokens": 128000,
+          "capabilities": [
+            "text_generation",
+            "transcription",
+            "text_to_speech",
+            "function_calling"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "Supports audio input and output via modalities field"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-4o-mini",
+          "display_name": "GPT-4o mini",
+          "context_window_tokens": 128000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-4o-mini-2024-07-18",
+          "display_name": "GPT-4o mini (Jul 2024)",
+          "context_window_tokens": 128000,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "image_understanding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-5",
+          "display_name": "gpt-5",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "image_understanding",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-5-codex",
+          "display_name": "gpt-5-codex",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-5.1",
+          "display_name": "gpt-5.1",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-5.1-codex",
+          "display_name": "gpt-5.1-codex",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-5.1-codex-max",
+          "display_name": "gpt-5.1-codex-max",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-5.2",
+          "display_name": "gpt-5.2",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "image_understanding",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-5.2-codex",
+          "display_name": "gpt-5.2-codex",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-5.3-codex",
+          "display_name": "gpt-5.3-codex",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-audio",
+          "display_name": "gpt-audio",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-audio-1.5",
+          "display_name": "gpt-audio-1.5",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-audio-mini",
+          "display_name": "gpt-audio-mini",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "text_to_speech",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-image-1-mini",
+          "display_name": "gpt-image-1-mini",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "text_to_speech",
+            "image_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-image-latest",
+          "display_name": "gpt-image-latest",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-oss",
+          "display_name": "gpt-oss",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "image_understanding",
+            "image_generation",
+            "code_generation",
+            "function_calling"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-oss-120b",
+          "display_name": "gpt-oss-120b",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-oss-20b",
+          "display_name": "gpt-oss-20b",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-realtime",
+          "display_name": "gpt-realtime",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-realtime-1.5",
+          "display_name": "gpt-realtime-1.5",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-realtime-mini",
+          "display_name": "gpt-realtime-mini",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "text_to_speech",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "o1",
+          "display_name": "o1",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output",
+            "image_understanding"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "o1-2024-12-17",
+          "display_name": "o1 (Dec 2024)",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output",
+            "image_understanding"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "o1-mini",
+          "display_name": "o1-mini",
+          "context_window_tokens": 128000,
+          "capabilities": [
+            "text_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "o1-mini-2024-09-12",
+          "display_name": "o1-mini (Sep 2024)",
+          "context_window_tokens": 128000,
+          "capabilities": [
+            "text_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "o1-preview",
+          "display_name": "o1-preview",
+          "context_window_tokens": 128000,
+          "capabilities": [
+            "text_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "o1-preview-2024-09-12",
+          "display_name": "o1-preview (Sep 2024)",
+          "context_window_tokens": 128000,
+          "capabilities": [
+            "text_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "o1-pro",
+          "display_name": "o1-pro",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "o3",
+          "display_name": "o3",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output",
+            "image_understanding"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "o3-deep-research",
+          "display_name": "o3-deep-research",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "image_understanding",
+            "image_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "o3-mini",
+          "display_name": "o3-mini",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "o3-mini-2025-01-31",
+          "display_name": "o3-mini (Jan 2025)",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "o3-pro",
+          "display_name": "o3-pro",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "image_understanding",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "o4-mini",
+          "display_name": "o4-mini",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "text_to_speech",
+            "image_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "o4-mini-deep-research",
+          "display_name": "o4-mini-deep-research",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "text_to_speech",
+            "image_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "text-embedding-3-large",
+          "display_name": "Text Embedding 3 Large",
+          "context_window_tokens": 8191,
+          "capabilities": [
+            "embedding"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "embeddings",
+              "path": "/v1/embeddings",
+              "notes": "Returns float32 or base64-encoded vectors; up to 3072 dimensions"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "text-embedding-3-small",
+          "display_name": "Text Embedding 3 Small",
+          "context_window_tokens": 8191,
+          "capabilities": [
+            "embedding"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "embeddings",
+              "path": "/v1/embeddings",
+              "notes": "Returns float32 or base64-encoded vectors; up to 1536 dimensions"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "text-embedding-ada-002",
+          "display_name": "Text Embedding Ada 002",
+          "context_window_tokens": 8191,
+          "capabilities": [
+            "embedding"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "embeddings",
+              "path": "/v1/embeddings",
+              "notes": "Returns float32 vectors; 1536 dimensions"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "Legacy embedding model; prefer text-embedding-3-*"
+        },
+        {
+          "model_id": "tts-1",
+          "display_name": "TTS-1",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_to_speech"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "audio_speech",
+              "path": "/v1/audio/speech",
+              "notes": "Returns audio stream; supports mp3, opus, aac, flac, wav, pcm"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "6 voices: alloy, echo, fable, onyx, nova, shimmer"
+        },
+        {
+          "model_id": "tts-1-hd",
+          "display_name": "TTS-1 HD",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_to_speech"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "audio_speech",
+              "path": "/v1/audio/speech",
+              "notes": "High-definition TTS; returns audio stream"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "High-definition TTS; 6 voices"
+        },
+        {
+          "model_id": "whisper-1",
+          "display_name": "Whisper",
+          "context_window_tokens": null,
+          "capabilities": [
+            "transcription"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "audio_transcriptions",
+              "path": "/v1/audio/transcriptions",
+              "notes": "Supports mp3, mp4, mpeg, mpga, m4a, wav, webm"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": "Supports 57 languages; charged per minute of audio"
+        }
+      ]
+    }
+  }
 }
