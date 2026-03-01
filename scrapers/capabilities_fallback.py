@@ -54,6 +54,7 @@ CAPABILITIES_FALLBACK = {
         "claude-haiku-4-5": [
             "text_generation",
             "translation",
+            "document_processing",
             "code_generation",
             "image_understanding",
             "function_calling",
@@ -109,6 +110,7 @@ CAPABILITIES_FALLBACK = {
         "claude-3-sonnet-20240229": [
             "text_generation",
             "translation",
+            "document_processing",
             "code_generation",
             "image_understanding",
             "function_calling",
@@ -148,8 +150,11 @@ CAPABILITIES_FALLBACK = {
         ],
         "gemini-2.0-flash-thinking-exp": [
             "text_generation",
+            "translation",
             "code_generation",
             "image_understanding",
+            "function_calling",
+            "structured_output",
         ],
         "gemini-2.0-flash-exp": [
             "text_generation",
@@ -217,6 +222,7 @@ CAPABILITIES_FALLBACK = {
             "translation",
             "code_generation",
             "function_calling",
+            "structured_output",
         ],
         # Embedding models
         "text-embedding-004": [
@@ -368,6 +374,7 @@ CAPABILITIES_FALLBACK = {
             "translation",
             "document_processing",
             "code_generation",
+            "image_understanding",
             "function_calling",
             "structured_output",
         ],
