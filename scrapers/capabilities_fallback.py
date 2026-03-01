@@ -784,6 +784,16 @@ _NAME_CAPABILITY_RULES: list = [
     # ── 轻量型模型：支持视觉，但通常无大文档处理 ──────────────────────────
     # 关键修复：用 "-mini" 而非 "mini"，避免误匹配 "gemini"（子串问题）
     # flash-lite / haiku / flash-8b 均支持 image_understanding
+    #
+    # Claude Haiku 4.x 系列（haiku-4）：新增 document_processing
+    # 必须在通用 haiku 规则之前匹配，避免被低能力版本规则覆盖
+    # - "haiku-4" 匹配 claude-haiku-4-5 ✓
+    # - 不匹配 claude-3-haiku-20240307 / claude-3-5-haiku-20241022 ✓
+    (["haiku-4"],                                   ["text_generation", "translation",
+                                                     "document_processing", "code_generation",
+                                                     "image_understanding", "function_calling",
+                                                     "structured_output"]),
+    # 其他轻量型模型（3.x haiku / mini / flash-lite / flash-8b）
     (["-mini", "flash-lite", "haiku", "flash-8b"],  ["text_generation", "translation",
                                                      "code_generation", "image_understanding",
                                                      "function_calling", "structured_output"]),
