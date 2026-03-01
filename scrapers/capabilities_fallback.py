@@ -151,6 +151,7 @@ CAPABILITIES_FALLBACK = {
         "gemini-2.0-flash-thinking-exp": [
             "text_generation",
             "translation",
+            "document_processing",
             "code_generation",
             "image_understanding",
             "function_calling",
@@ -196,6 +197,7 @@ CAPABILITIES_FALLBACK = {
         "gemini-1.5-flash": [
             "text_generation",
             "translation",
+            "document_processing",
             "code_generation",
             "image_understanding",
             "function_calling",
@@ -204,6 +206,7 @@ CAPABILITIES_FALLBACK = {
         "gemini-1.5-flash-002": [
             "text_generation",
             "translation",
+            "document_processing",
             "code_generation",
             "image_understanding",
             "function_calling",
@@ -213,6 +216,7 @@ CAPABILITIES_FALLBACK = {
             "text_generation",
             "translation",
             "code_generation",
+            "image_understanding",
             "function_calling",
             "structured_output",
         ],
@@ -738,35 +742,65 @@ def get_display_name(provider: str, model_id: str) -> str:
 # ---------------------------------------------------------------------------
 
 # 模型名称关键词 → 能力映射（按优先级排列）
+# 注意：规则按顺序匹配，命中第一条即停止。越具体的规则放越前面。
 _NAME_CAPABILITY_RULES: list = [
-    # 专用模型（通常只有单一能力）
+    # ── 专用模型（单一能力）────────────────────────────────────────────────
     (["embedding", "embed"],                        ["embedding"]),
     (["whisper"],                                   ["transcription"]),
-    (["tts", "text-to-speech", "speech"],           ["text_to_speech"]),
+    (["tts", "text-to-speech"],                     ["text_to_speech"]),
     (["dall-e", "dalle", "imagen", "image-gen"],    ["image_generation"]),
-    # Reasoning / o-series：无图像能力但有 structured_output
+
+    # ── 音频多模态（优先于通用 gpt-4o 规则）────────────────────────────────
+    # 含 "-audio-" 的模型（如 gpt-4o-audio-preview）是音频输入+输出专用模型
+    (["-audio-"],                                   ["text_generation", "transcription",
+                                                     "text_to_speech", "function_calling"]),
+
+    # ── Reasoning / o-series ───────────────────────────────────────────────
+    # o1-mini / o1-preview：纯文本推理，无视觉、无 function_calling
     (["o1-mini", "o1-preview"],                     ["text_generation", "code_generation"]),
-    (["o1", "o3-mini"],                             ["text_generation", "code_generation",
+    # o1 正式版：支持视觉（image_understanding）
+    # 注意：必须在 o1-mini/o1-preview 规则之后，避免被误提前匹配
+    (["o1"],                                        ["text_generation", "code_generation",
+                                                     "function_calling", "structured_output",
+                                                     "image_understanding"]),
+    # o3-mini：推理模型，无视觉
+    (["o3-mini"],                                   ["text_generation", "code_generation",
                                                      "function_calling", "structured_output"]),
+    # o3：完整推理旗舰，支持视觉
     (["o3"],                                        ["text_generation", "code_generation",
                                                      "function_calling", "structured_output",
                                                      "image_understanding"]),
-    # 轻量型模型：无图像、无大文档处理
-    (["mini", "lite", "flash-lite", "haiku", "flash-8b"],
-                                                    ["text_generation", "translation",
+
+    # ── 旧版 GPT-4 快照（早于 structured_output 功能上线）──────────────────
+    (["gpt-4-0613", "gpt-4-0314"],                  ["text_generation", "translation",
+                                                     "code_generation", "function_calling"]),
+
+    # ── Gemini 1.0 系列（上下文窗口小，无 image_understanding）─────────────
+    # 必须在"pro"通配规则之前匹配，否则会被旗舰规则误判
+    (["gemini-1.0"],                                ["text_generation", "translation",
                                                      "code_generation", "function_calling",
                                                      "structured_output"]),
-    # 旗舰 / Pro 模型：全能力
+
+    # ── 轻量型模型：支持视觉，但通常无大文档处理 ──────────────────────────
+    # 关键修复：用 "-mini" 而非 "mini"，避免误匹配 "gemini"（子串问题）
+    # flash-lite / haiku / flash-8b 均支持 image_understanding
+    (["-mini", "flash-lite", "haiku", "flash-8b"],  ["text_generation", "translation",
+                                                     "code_generation", "image_understanding",
+                                                     "function_calling", "structured_output"]),
+
+    # ── 旗舰 / Pro 模型：全能力 ────────────────────────────────────────────
     (["opus", "pro", "flash", "sonnet", "gpt-4o", "gpt-4-turbo", "gemini-1.5", "gemini-2.0"],
                                                     ["text_generation", "translation",
                                                      "document_processing", "code_generation",
                                                      "image_understanding", "function_calling",
                                                      "structured_output"]),
-    # GPT-3.5 / GPT-4 通用
+
+    # ── GPT-3.5 / GPT-4 通用（无 document_processing，有 structured_output）
     (["gpt-4", "gpt-3.5"],                          ["text_generation", "translation",
                                                      "code_generation", "function_calling",
                                                      "structured_output"]),
-    # Claude 通配（未匹配到具体版本时）
+
+    # ── Claude 通配（未匹配到具体版本时）──────────────────────────────────
     (["claude"],                                    ["text_generation", "translation",
                                                      "document_processing", "code_generation",
                                                      "image_understanding", "function_calling",
