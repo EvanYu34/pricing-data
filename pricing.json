@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-01T13:31:47Z",
+  "last_updated": "2026-03-02T01:45:56Z",
   "schema_version": "2.0",
   "sources": {
     "claude": {
@@ -211,6 +211,7 @@
           "capabilities": [
             "text_generation",
             "translation",
+            "document_processing",
             "code_generation",
             "image_understanding",
             "function_calling",
@@ -242,6 +243,7 @@
           "capabilities": [
             "text_generation",
             "translation",
+            "document_processing",
             "code_generation",
             "image_understanding",
             "function_calling",
@@ -273,6 +275,7 @@
           "capabilities": [
             "text_generation",
             "translation",
+            "image_understanding",
             "document_processing",
             "code_generation",
             "function_calling",
@@ -564,6 +567,8 @@
           "capabilities": [
             "text_generation",
             "translation",
+            "image_understanding",
+            "document_processing",
             "code_generation",
             "function_calling",
             "structured_output"
@@ -594,6 +599,8 @@
           "capabilities": [
             "text_generation",
             "translation",
+            "image_understanding",
+            "document_processing",
             "code_generation",
             "function_calling",
             "structured_output"
@@ -650,6 +657,7 @@
           "capabilities": [
             "text_generation",
             "translation",
+            "image_understanding",
             "code_generation",
             "function_calling",
             "structured_output"
@@ -680,6 +688,8 @@
           "capabilities": [
             "text_generation",
             "translation",
+            "image_understanding",
+            "document_processing",
             "code_generation",
             "function_calling",
             "structured_output"
@@ -735,10 +745,7 @@
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
-            "translation",
-            "code_generation",
-            "function_calling",
-            "structured_output"
+            "code_generation"
           ],
           "pricing": {
             "currency": "USD",
@@ -766,6 +773,8 @@
           "capabilities": [
             "text_generation",
             "translation",
+            "image_understanding",
+            "document_processing",
             "code_generation",
             "function_calling",
             "structured_output"
@@ -796,6 +805,8 @@
           "capabilities": [
             "text_generation",
             "translation",
+            "image_understanding",
+            "document_processing",
             "code_generation",
             "function_calling",
             "structured_output"
@@ -826,6 +837,8 @@
           "capabilities": [
             "text_generation",
             "translation",
+            "image_understanding",
+            "document_processing",
             "code_generation",
             "function_calling",
             "structured_output"
@@ -855,10 +868,7 @@
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
-            "translation",
-            "code_generation",
-            "function_calling",
-            "structured_output"
+            "code_generation"
           ],
           "pricing": {
             "currency": "USD",
@@ -911,10 +921,7 @@
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
-            "translation",
-            "code_generation",
-            "function_calling",
-            "structured_output"
+            "code_generation"
           ],
           "pricing": {
             "currency": "USD",
@@ -943,7 +950,8 @@
             "text_generation",
             "translation",
             "code_generation",
-            "function_calling"
+            "function_calling",
+            "structured_output"
           ],
           "pricing": {
             "currency": "USD",
@@ -971,6 +979,7 @@
           "capabilities": [
             "text_generation",
             "translation",
+            "document_processing",
             "code_generation",
             "image_understanding",
             "function_calling",
@@ -1002,6 +1011,7 @@
           "capabilities": [
             "text_generation",
             "translation",
+            "document_processing",
             "code_generation",
             "image_understanding",
             "function_calling",
@@ -1034,6 +1044,7 @@
             "text_generation",
             "translation",
             "code_generation",
+            "image_understanding",
             "function_calling",
             "structured_output"
           ],
@@ -1221,8 +1232,12 @@
           "context_window_tokens": 1048576,
           "capabilities": [
             "text_generation",
+            "translation",
+            "document_processing",
             "code_generation",
-            "image_understanding"
+            "image_understanding",
+            "function_calling",
+            "structured_output"
           ],
           "pricing": {
             "currency": "USD",
@@ -1282,6 +1297,8 @@
           "capabilities": [
             "text_generation",
             "translation",
+            "image_understanding",
+            "document_processing",
             "code_generation",
             "function_calling",
             "structured_output"
@@ -1312,6 +1329,8 @@
           "capabilities": [
             "text_generation",
             "translation",
+            "image_understanding",
+            "document_processing",
             "code_generation",
             "function_calling",
             "structured_output"
@@ -1788,6 +1807,7 @@
             "translation",
             "document_processing",
             "code_generation",
+            "image_understanding",
             "function_calling",
             "structured_output"
           ],
@@ -2354,8 +2374,10 @@
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
+            "transcription",
             "text_to_speech",
-            "code_generation"
+            "code_generation",
+            "function_calling"
           ],
           "pricing": {
             "currency": "USD",
@@ -2372,7 +2394,7 @@
               "notes": "OpenAI chat format"
             }
           ],
-          "multilingual": false,
+          "multilingual": true,
           "is_deprecated": false,
           "notes": ""
         },
@@ -2382,11 +2404,10 @@
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
-            "translation",
+            "transcription",
             "text_to_speech",
             "code_generation",
-            "function_calling",
-            "structured_output"
+            "function_calling"
           ],
           "pricing": {
             "currency": "USD",
@@ -2415,6 +2436,7 @@
             "text_generation",
             "translation",
             "text_to_speech",
+            "image_understanding",
             "image_generation",
             "code_generation",
             "function_calling",
@@ -2621,6 +2643,7 @@
             "text_generation",
             "translation",
             "text_to_speech",
+            "image_understanding",
             "code_generation",
             "function_calling",
             "structured_output"
@@ -2818,6 +2841,7 @@
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
+            "image_understanding",
             "code_generation",
             "function_calling",
             "structured_output"
@@ -3000,6 +3024,7 @@
             "text_generation",
             "translation",
             "text_to_speech",
+            "image_understanding",
             "image_generation",
             "code_generation",
             "function_calling",
@@ -3032,6 +3057,7 @@
             "text_generation",
             "translation",
             "text_to_speech",
+            "image_understanding",
             "image_generation",
             "code_generation",
             "function_calling",
