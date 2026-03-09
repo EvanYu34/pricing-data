@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-02T01:45:56Z",
+  "last_updated": "2026-03-09T01:47:00Z",
   "schema_version": "2.0",
   "sources": {
     "claude": {
@@ -807,6 +807,37 @@
             "translation",
             "image_understanding",
             "document_processing",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini 3.1 flash-lite",
+          "display_name": "gemini 3.1 flash-lite",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "image_understanding",
             "code_generation",
             "function_calling",
             "structured_output"
@@ -2259,11 +2290,7 @@
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
-            "text_to_speech",
-            "image_understanding",
-            "code_generation",
-            "function_calling",
-            "structured_output"
+            "code_generation"
           ],
           "pricing": {
             "currency": "USD",
@@ -2313,6 +2340,34 @@
           "notes": ""
         },
         {
+          "model_id": "gpt-5.3",
+          "display_name": "gpt-5.3",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
           "model_id": "gpt-5.3-codex",
           "display_name": "gpt-5.3-codex",
           "context_window_tokens": null,
@@ -2320,6 +2375,37 @@
             "text_generation",
             "image_generation",
             "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-5.4",
+          "display_name": "gpt-5.4",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "image_understanding",
+            "code_generation",
+            "function_calling",
+            "structured_output"
           ],
           "pricing": {
             "currency": "USD",
@@ -2499,8 +2585,7 @@
             "text_to_speech",
             "image_understanding",
             "image_generation",
-            "code_generation",
-            "function_calling"
+            "code_generation"
           ],
           "pricing": {
             "currency": "USD",
