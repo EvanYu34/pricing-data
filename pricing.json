@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-09T01:47:00Z",
+  "last_updated": "2026-03-16T01:58:38Z",
   "schema_version": "2.0",
   "sources": {
     "claude": {
@@ -799,8 +799,8 @@
           "notes": ""
         },
         {
-          "model_id": "gemini 3 pro",
-          "display_name": "gemini 3 pro",
+          "model_id": "gemini 3 pro previewshut down",
+          "display_name": "gemini 3 pro previewshut down",
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
@@ -921,8 +921,34 @@
           "notes": ""
         },
         {
-          "model_id": "gemini embeddings",
-          "display_name": "gemini embeddings",
+          "model_id": "gemini embedding",
+          "display_name": "gemini embedding",
+          "context_window_tokens": null,
+          "capabilities": [
+            "embedding"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini embedding 2preview",
+          "display_name": "gemini embedding 2preview",
           "context_window_tokens": null,
           "capabilities": [
             "embedding"
@@ -1584,69 +1610,6 @@
           "notes": "Supports 1024x1024, 1792x1024, 1024x1792"
         },
         {
-          "model_id": "gpt-3",
-          "display_name": "gpt-3",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-3.5",
-          "display_name": "gpt-3.5",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "transcription",
-            "text_to_speech",
-            "image_generation",
-            "code_generation",
-            "embedding",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
           "model_id": "gpt-3.5-turbo",
           "display_name": "GPT-3.5 Turbo",
           "context_window_tokens": 16385,
@@ -1839,68 +1802,6 @@
             "document_processing",
             "code_generation",
             "image_understanding",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-4.1",
-          "display_name": "gpt-4.1",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "text_to_speech",
-            "image_generation",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-4.5",
-          "display_name": "gpt-4.5",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "code_generation",
             "function_calling",
             "structured_output"
           ],
@@ -2174,13 +2075,48 @@
           "notes": ""
         },
         {
-          "model_id": "gpt-5-codex",
-          "display_name": "gpt-5-codex",
+          "model_id": "gpt-5-mini",
+          "display_name": "gpt-5-mini",
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
+            "translation",
+            "image_understanding",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-5-mini-2025-08-07",
+          "display_name": "gpt-5-mini-2025-08-07",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "image_understanding",
             "image_generation",
-            "code_generation"
+            "code_generation",
+            "function_calling",
+            "structured_output"
           ],
           "pricing": {
             "currency": "USD",
@@ -2197,201 +2133,7 @@
               "notes": "OpenAI chat format"
             }
           ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-5.1",
-          "display_name": "gpt-5.1",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-5.1-codex",
-          "display_name": "gpt-5.1-codex",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-5.1-codex-max",
-          "display_name": "gpt-5.1-codex-max",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-5.2",
-          "display_name": "gpt-5.2",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-5.2-codex",
-          "display_name": "gpt-5.2-codex",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-5.3",
-          "display_name": "gpt-5.3",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-5.3-codex",
-          "display_name": "gpt-5.3-codex",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
+          "multilingual": true,
           "is_deprecated": false,
           "notes": ""
         },
@@ -2406,156 +2148,6 @@
             "code_generation",
             "function_calling",
             "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-audio",
-          "display_name": "gpt-audio",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-audio-1.5",
-          "display_name": "gpt-audio-1.5",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "transcription",
-            "text_to_speech",
-            "code_generation",
-            "function_calling"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-audio-mini",
-          "display_name": "gpt-audio-mini",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "transcription",
-            "text_to_speech",
-            "code_generation",
-            "function_calling"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-image-1-mini",
-          "display_name": "gpt-image-1-mini",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "text_to_speech",
-            "image_understanding",
-            "image_generation",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-image-latest",
-          "display_name": "gpt-image-latest",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "image_generation",
-            "code_generation"
           ],
           "pricing": {
             "currency": "USD",
@@ -2603,152 +2195,6 @@
             }
           ],
           "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-oss-120b",
-          "display_name": "gpt-oss-120b",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-oss-20b",
-          "display_name": "gpt-oss-20b",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-realtime",
-          "display_name": "gpt-realtime",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-realtime-1.5",
-          "display_name": "gpt-realtime-1.5",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-realtime-mini",
-          "display_name": "gpt-realtime-mini",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "text_to_speech",
-            "image_understanding",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": true,
           "is_deprecated": false,
           "notes": ""
         },
@@ -2921,36 +2367,6 @@
           "notes": ""
         },
         {
-          "model_id": "o1-pro",
-          "display_name": "o1-pro",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "image_understanding",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
           "model_id": "o3",
           "display_name": "o3",
           "context_window_tokens": 200000,
@@ -2977,38 +2393,6 @@
             }
           ],
           "multilingual": true,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "o3-deep-research",
-          "display_name": "o3-deep-research",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "image_understanding",
-            "image_generation",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
           "is_deprecated": false,
           "notes": ""
         },
@@ -3067,103 +2451,6 @@
             }
           ],
           "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "o3-pro",
-          "display_name": "o3-pro",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "image_understanding",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "o4-mini",
-          "display_name": "o4-mini",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "text_to_speech",
-            "image_understanding",
-            "image_generation",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "o4-mini-deep-research",
-          "display_name": "o4-mini-deep-research",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "text_to_speech",
-            "image_understanding",
-            "image_generation",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": true,
           "is_deprecated": false,
           "notes": ""
         },
