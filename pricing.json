@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-23T01:52:11Z",
+  "last_updated": "2026-03-30T02:01:47Z",
   "schema_version": "2.0",
   "sources": {
     "claude": {
@@ -801,6 +801,70 @@
         {
           "model_id": "gemini 3 pro previewshut down",
           "display_name": "gemini 3 pro previewshut down",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "image_understanding",
+            "document_processing",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini 3.1 flash live",
+          "display_name": "gemini 3.1 flash live",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "image_understanding",
+            "document_processing",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini 3.1 flash livepreview",
+          "display_name": "gemini 3.1 flash livepreview",
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
@@ -2080,6 +2144,7 @@
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
+            "text_to_speech",
             "image_generation",
             "code_generation",
             "function_calling"
@@ -2165,6 +2230,40 @@
           "notes": ""
         },
         {
+          "model_id": "gpt-image-1-mini",
+          "display_name": "gpt-image-1-mini",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "transcription",
+            "text_to_speech",
+            "image_understanding",
+            "image_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
           "model_id": "gpt-oss",
           "display_name": "gpt-oss",
           "context_window_tokens": null,
@@ -2192,6 +2291,70 @@
             }
           ],
           "multilingual": false,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-realtime-1.5",
+          "display_name": "gpt-realtime-1.5",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "transcription",
+            "text_to_speech",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-realtime-mini",
+          "display_name": "gpt-realtime-mini",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "transcription",
+            "text_to_speech",
+            "image_understanding",
+            "image_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
           "is_deprecated": false,
           "notes": ""
         },
