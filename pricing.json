@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-30T02:01:47Z",
+  "last_updated": "2026-04-06T02:02:06Z",
   "schema_version": "2.0",
   "sources": {
     "claude": {
@@ -554,6 +554,33 @@
               "endpoint_type": "embeddings",
               "path": "/v1beta/models/{model}:embedContent",
               "notes": "Google native embedding format (legacy)"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "flex",
+          "display_name": "flex",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": 0.15,
+            "output_per_1m_tokens": 0.0195,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
             }
           ],
           "multilingual": true,
@@ -1539,6 +1566,33 @@
             "currency": "USD",
             "input_per_1m_tokens": 35.0,
             "output_per_1m_tokens": 14.0,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "priority",
+          "display_name": "priority",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": 0.54,
+            "output_per_1m_tokens": 0.0702,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
             "notes": ""
