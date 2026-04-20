@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-13T02:10:16Z",
+  "last_updated": "2026-04-20T02:09:29Z",
   "schema_version": "2.0",
   "sources": {
     "claude": {
@@ -397,8 +397,8 @@
           "notes": ""
         },
         {
-          "model_id": "claude-opus-4-6-v1",
-          "display_name": "claude-opus-4-6-v1",
+          "model_id": "claude-opus-4-7",
+          "display_name": "claude-opus-4-7",
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
@@ -517,8 +517,8 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": 0.0375,
-            "output_per_1m_tokens": 0.15,
+            "input_per_1m_tokens": 0.5,
+            "output_per_1m_tokens": 1.0,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
             "notes": ""
@@ -922,6 +922,58 @@
           "notes": ""
         },
         {
+          "model_id": "gemini 3.1 flash tts",
+          "display_name": "gemini 3.1 flash tts",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_to_speech"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini 3.1 flash ttspreview",
+          "display_name": "gemini 3.1 flash ttspreview",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_to_speech"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
           "model_id": "gemini 3.1 flash-lite",
           "display_name": "gemini 3.1 flash-lite",
           "context_window_tokens": null,
@@ -1064,8 +1116,35 @@
           "notes": ""
         },
         {
-          "model_id": "gemini roboticspreview",
-          "display_name": "gemini roboticspreview",
+          "model_id": "gemini robotics-er 1.5preview",
+          "display_name": "gemini robotics-er 1.5preview",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gemini robotics-er 1.6preview",
+          "display_name": "gemini robotics-er 1.6preview",
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
