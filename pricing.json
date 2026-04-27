@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-20T02:09:29Z",
+  "last_updated": "2026-04-27T02:14:07Z",
   "schema_version": "2.0",
   "sources": {
     "claude": {
@@ -1037,6 +1037,33 @@
           "notes": ""
         },
         {
+          "model_id": "gemini deep research maxpreview",
+          "display_name": "gemini deep research maxpreview",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
           "model_id": "gemini deep researchpreview",
           "display_name": "gemini deep researchpreview",
           "context_window_tokens": null,
@@ -1090,8 +1117,8 @@
           "notes": ""
         },
         {
-          "model_id": "gemini embedding 2preview",
-          "display_name": "gemini embedding 2preview",
+          "model_id": "gemini embedding 2",
+          "display_name": "gemini embedding 2",
           "context_window_tokens": null,
           "capabilities": [
             "embedding"
@@ -2248,36 +2275,6 @@
             "text_generation",
             "text_to_speech",
             "image_understanding",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-5.4-class",
-          "display_name": "gpt-5.4-class",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
             "image_generation",
             "code_generation",
             "function_calling"
@@ -2363,16 +2360,13 @@
           "notes": ""
         },
         {
-          "model_id": "gpt-image-1-mini",
-          "display_name": "gpt-image-1-mini",
+          "model_id": "gpt-5.5",
+          "display_name": "gpt-5.5",
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
-            "translation",
-            "transcription",
             "text_to_speech",
             "image_understanding",
-            "image_generation",
             "code_generation",
             "function_calling",
             "structured_output"
@@ -2392,7 +2386,7 @@
               "notes": "OpenAI chat format"
             }
           ],
-          "multilingual": true,
+          "multilingual": false,
           "is_deprecated": false,
           "notes": ""
         },
