@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-27T02:14:07Z",
+  "last_updated": "2026-05-04T02:26:27Z",
   "schema_version": "2.0",
   "sources": {
     "claude": {
@@ -1143,33 +1143,6 @@
           "notes": ""
         },
         {
-          "model_id": "gemini robotics-er 1.5preview",
-          "display_name": "gemini robotics-er 1.5preview",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
           "model_id": "gemini robotics-er 1.6preview",
           "display_name": "gemini robotics-er 1.6preview",
           "context_window_tokens": null,
@@ -1724,8 +1697,8 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": 0.3,
-            "output_per_1m_tokens": 1.0,
+            "input_per_1m_tokens": 1.0,
+            "output_per_1m_tokens": 2.0,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
             "notes": ""
