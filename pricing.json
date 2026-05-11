@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-04T02:26:27Z",
+  "last_updated": "2026-05-11T02:40:16Z",
   "schema_version": "2.0",
   "sources": {
     "claude": {
@@ -2249,8 +2249,7 @@
             "text_to_speech",
             "image_understanding",
             "image_generation",
-            "code_generation",
-            "function_calling"
+            "code_generation"
           ],
           "pricing": {
             "currency": "USD",
@@ -2400,6 +2399,37 @@
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
+            "translation",
+            "transcription",
+            "text_to_speech",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-realtime-2",
+          "display_name": "gpt-realtime-2",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
             "transcription",
             "text_to_speech",
             "image_generation",
@@ -2434,10 +2464,67 @@
             "transcription",
             "text_to_speech",
             "image_understanding",
-            "image_generation",
             "code_generation",
             "function_calling",
             "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-realtime-translate",
+          "display_name": "gpt-realtime-translate",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "transcription",
+            "text_to_speech",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": ""
+        },
+        {
+          "model_id": "gpt-realtime-whisper",
+          "display_name": "gpt-realtime-whisper",
+          "context_window_tokens": null,
+          "capabilities": [
+            "transcription",
+            "text_to_speech"
           ],
           "pricing": {
             "currency": "USD",
