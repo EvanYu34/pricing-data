@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 项目说明
+    url: https://github.com/EvanYu34/pricing-data/blob/main/README.md
+    about: 数据 schema、字段定义、客户端拉取方式
+  - name: 工作流文档
+    url: https://github.com/EvanYu34/pricing-data/blob/main/CLAUDE.md
+    about: 开发流程、信任分级、常用命令
