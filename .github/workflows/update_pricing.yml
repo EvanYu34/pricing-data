@@ -85,7 +85,8 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add pricing.json AUDIT_REPORT.md
+          # AUDIT_REPORT.md is in .gitignore — regenerated each run, lives only in Job Summary.
+          git add pricing.json
           COMMIT_MSG=$(cat .commit_message 2>/dev/null \
             || echo "chore: update pricing data $(date -u +%Y-%m-%d)")
           git commit -m "$COMMIT_MSG"
