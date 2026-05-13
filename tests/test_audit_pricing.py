@@ -35,8 +35,65 @@ def test_report_contains_coverage_table():
     assert "价格抓取覆盖率" in md
     assert "claude" in md
     assert "80%" in md
-    # 80% coverage: passes only when previous was at most 85% (no drop > 5pp).
-    # Without a previous report on disk, the threshold IS triggered → exit 1.
+
+
+def test_first_run_no_baseline_passes(tmp_path, monkeypatch):
+    """Without a previous AUDIT_REPORT.md to compare against, low coverage
+    should emit WARNING (not fail) — establish baseline."""
+    monkeypatch.setattr(audit_pricing, "AUDIT_REPORT", tmp_path / "AUDIT_REPORT.md")
+    pricing = _pricing_skel(coverage_pct=20)
+    md, exit_code = audit_pricing.build_report(pricing, litellm_counters={
+        "fetch_succeeded": True, "fetch_latency_s": 1.0, "kept": 50,
+        "skipped_non_chat": 0, "skipped_prefix": 0, "unrecognized_provider": 0,
+    })
+    assert exit_code == 0   # First run passes
+    assert "WARNINGS" in md  # But noisy about it
+    assert "baseline established" in md
+
+
+def test_baseline_drop_fails(tmp_path, monkeypatch):
+    """When AUDIT_REPORT.md exists with prior coverage and current run drops
+    > 5pp into < 90% territory, audit fails."""
+    # Plant a prior AUDIT_REPORT.md with claude at 95%
+    prior = tmp_path / "AUDIT_REPORT.md"
+    prior.write_text(
+        "# Prior\n\n"
+        "## 价格抓取覆盖率\n\n"
+        "| Provider | with input price | total | coverage | source breakdown |\n"
+        "|---|---:|---:|---:|---|\n"
+        "| claude | 19 | 20 | 95% | litellm: 19 |\n",
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(audit_pricing, "AUDIT_REPORT", prior)
+    # Current coverage 80%, drop of 15pp → FAIL
+    pricing = _pricing_skel(coverage_pct=80)
+    md, exit_code = audit_pricing.build_report(pricing, litellm_counters={
+        "fetch_succeeded": True, "fetch_latency_s": 1.0, "kept": 50,
+        "skipped_non_chat": 0, "skipped_prefix": 0, "unrecognized_provider": 0,
+    })
+    assert exit_code == 1
+    assert "FAILURES" in md
+
+
+def test_baseline_small_drop_passes(tmp_path, monkeypatch):
+    """Below 90% but only 3pp drop from baseline → WARN not FAIL."""
+    prior = tmp_path / "AUDIT_REPORT.md"
+    prior.write_text(
+        "# Prior\n\n"
+        "## 价格抓取覆盖率\n\n"
+        "| Provider | with input price | total | coverage | source breakdown |\n"
+        "|---|---:|---:|---:|---|\n"
+        "| claude | 17 | 20 | 83% | litellm: 17 |\n",
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(audit_pricing, "AUDIT_REPORT", prior)
+    pricing = _pricing_skel(coverage_pct=80)
+    md, exit_code = audit_pricing.build_report(pricing, litellm_counters={
+        "fetch_succeeded": True, "fetch_latency_s": 1.0, "kept": 50,
+        "skipped_non_chat": 0, "skipped_prefix": 0, "unrecognized_provider": 0,
+    })
+    assert exit_code == 0   # No significant drop
+    assert "WARNINGS" in md  # Still noisy about low coverage
 
 
 def test_litellm_fetch_failure_fails():

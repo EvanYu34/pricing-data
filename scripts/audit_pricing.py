@@ -133,13 +133,22 @@ def build_report(
             f"| {provider} | {priced} | {total} | {pct:.0f}% | {breakdown_str or '–'} |"
         )
 
-        # Coverage failure: < 90% AND dropped > 5pp from previous
+        # Coverage failure semantics (plan v5 §4):
+        #   FAIL only when we have a baseline AND coverage dropped > 5pp.
+        #   No baseline (first run) → establish one; emit WARNING if low.
+        #   Below threshold but not dropping → WARNING (not FAIL).
         prev = previous_coverage.get(provider)
         if pct < COVERAGE_MIN_PCT:
-            if prev is None or (prev - pct) > COVERAGE_DROP_MAX_PP:
+            if prev is not None and (prev - pct) > COVERAGE_DROP_MAX_PP:
                 failures.append(
+                    f"{provider} coverage dropped {prev:.0f}% → {pct:.0f}% "
+                    f"(below {COVERAGE_MIN_PCT:.0f}% and lost > {COVERAGE_DROP_MAX_PP:.0f}pp)"
+                )
+            else:
+                warnings.append(
                     f"{provider} coverage {pct:.0f}% < {COVERAGE_MIN_PCT:.0f}% "
-                    f"(prev: {prev or 'n/a'})"
+                    f"(prev: {prev if prev is not None else 'n/a'} — "
+                    f"{'baseline established' if prev is None else 'no significant drop'})"
                 )
 
         # Stale-fraction warning
