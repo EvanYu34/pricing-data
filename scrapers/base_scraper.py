@@ -248,6 +248,9 @@ class BaseScraper(abc.ABC):
         return {
             "currency": "USD",
             "input_per_1m_tokens": None,
+            # v5: tiered pricing (e.g. Anthropic charges 2x for >200k prompt tokens).
+            # None means "same as base tier" for consumers.
+            "input_per_1m_tokens_above_200k": None,
             "output_per_1m_tokens": None,
             "cache_write_per_1m_tokens": None,
             "cache_read_per_1m_tokens": None,

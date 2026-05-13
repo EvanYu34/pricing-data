@@ -1,6 +1,9 @@
 {
-  "last_updated": "2026-05-11T02:40:16Z",
+  "last_updated": "2026-05-13T03:49:04Z",
   "schema_version": "2.0",
+  "attribution": {
+    "litellm": "https://github.com/BerriAI/litellm — MIT"
+  },
   "sources": {
     "claude": {
       "fetch_status": "success",
@@ -28,10 +31,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "input_per_1m_tokens": 0.8,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 4.0,
+            "cache_write_per_1m_tokens": 1.0,
+            "cache_read_per_1m_tokens": 0.08,
             "notes": ""
           },
           "api_endpoints": [
@@ -43,7 +47,13 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "bedrock",
+            "vertex_ai-anthropic_models"
+          ],
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "claude-3-5-sonnet-20240620",
@@ -60,10 +70,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "input_per_1m_tokens": 3.0,
+            "input_per_1m_tokens_above_200k": 6.0,
+            "output_per_1m_tokens": 15.0,
+            "cache_write_per_1m_tokens": 3.75,
+            "cache_read_per_1m_tokens": 0.3,
             "notes": ""
           },
           "api_endpoints": [
@@ -75,7 +86,13 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "bedrock",
+            "vertex_ai-anthropic_models"
+          ],
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "claude-3-5-sonnet-20241022",
@@ -92,10 +109,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "input_per_1m_tokens": 3.0,
+            "input_per_1m_tokens_above_200k": 6.0,
+            "output_per_1m_tokens": 15.0,
+            "cache_write_per_1m_tokens": 3.75,
+            "cache_read_per_1m_tokens": 0.3,
             "notes": ""
           },
           "api_endpoints": [
@@ -107,7 +125,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "claude-3-7-sonnet-20250219",
@@ -124,10 +144,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "input_per_1m_tokens": 3.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 15.0,
+            "cache_write_per_1m_tokens": 3.75,
+            "cache_read_per_1m_tokens": 0.3,
             "notes": ""
           },
           "api_endpoints": [
@@ -139,7 +160,15 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "anthropic",
+            "bedrock",
+            "bedrock_converse",
+            "vertex_ai-anthropic_models"
+          ],
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "claude-3-haiku-20240307",
@@ -155,10 +184,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "input_per_1m_tokens": 0.25,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 1.25,
+            "cache_write_per_1m_tokens": 0.3,
+            "cache_read_per_1m_tokens": 0.03,
             "notes": ""
           },
           "api_endpoints": [
@@ -170,7 +200,14 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "anthropic",
+            "bedrock",
+            "vertex_ai-anthropic_models"
+          ],
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "claude-3-opus-20240229",
@@ -187,10 +224,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "input_per_1m_tokens": 15.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 75.0,
+            "cache_write_per_1m_tokens": 18.75,
+            "cache_read_per_1m_tokens": 1.5,
             "notes": ""
           },
           "api_endpoints": [
@@ -202,7 +240,14 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "anthropic",
+            "bedrock",
+            "vertex_ai-anthropic_models"
+          ],
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "claude-3-sonnet-20240229",
@@ -219,10 +264,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "input_per_1m_tokens": 3.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 15.0,
+            "cache_write_per_1m_tokens": 3.75,
+            "cache_read_per_1m_tokens": 0.3,
             "notes": ""
           },
           "api_endpoints": [
@@ -234,7 +280,13 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "bedrock",
+            "vertex_ai-anthropic_models"
+          ],
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "claude-haiku-4-5",
@@ -251,10 +303,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "input_per_1m_tokens": 1.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 5.0,
+            "cache_write_per_1m_tokens": 1.25,
+            "cache_read_per_1m_tokens": 0.1,
             "notes": ""
           },
           "api_endpoints": [
@@ -266,7 +319,13 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "anthropic",
+            "vertex_ai-anthropic_models"
+          ],
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "claude-haiku-4-5-20251001",
@@ -283,10 +342,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "input_per_1m_tokens": 1.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 5.0,
+            "cache_write_per_1m_tokens": 1.25,
+            "cache_read_per_1m_tokens": 0.1,
             "notes": ""
           },
           "api_endpoints": [
@@ -298,7 +358,14 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "anthropic",
+            "bedrock_converse",
+            "vertex_ai-anthropic_models"
+          ],
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "claude-haiku-4-5-20251001-v1",
@@ -315,10 +382,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "input_per_1m_tokens": 1.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 5.0,
+            "cache_write_per_1m_tokens": 1.25,
+            "cache_read_per_1m_tokens": 0.1,
             "notes": ""
           },
           "api_endpoints": [
@@ -330,7 +398,14 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "anthropic",
+            "bedrock_converse",
+            "vertex_ai-anthropic_models"
+          ],
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "claude-opus-4-5",
@@ -347,10 +422,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "input_per_1m_tokens": 5.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 25.0,
+            "cache_write_per_1m_tokens": 6.25,
+            "cache_read_per_1m_tokens": 0.5,
             "notes": ""
           },
           "api_endpoints": [
@@ -362,7 +438,13 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "anthropic",
+            "vertex_ai-anthropic_models"
+          ],
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "claude-opus-4-6",
@@ -379,7 +461,48 @@
           ],
           "pricing": {
             "currency": "USD",
+            "input_per_1m_tokens": 5.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 25.0,
+            "cache_write_per_1m_tokens": 6.25,
+            "cache_read_per_1m_tokens": 0.5,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "messages",
+              "path": "/v1/messages",
+              "notes": "Anthropic native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "anthropic",
+            "bedrock_converse",
+            "vertex_ai-anthropic_models"
+          ],
+          "last_seen_run": "2026-05-13"
+        },
+        {
+          "model_id": "claude-opus-4-6-v1",
+          "display_name": "claude-opus-4-6-v1",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "image_understanding",
+            "document_processing",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -394,7 +517,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
         },
         {
           "model_id": "claude-opus-4-7",
@@ -411,10 +536,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "input_per_1m_tokens": 5.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 25.0,
+            "cache_write_per_1m_tokens": 6.25,
+            "cache_read_per_1m_tokens": 0.5,
             "notes": ""
           },
           "api_endpoints": [
@@ -426,7 +552,14 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "anthropic",
+            "bedrock_converse",
+            "vertex_ai-anthropic_models"
+          ],
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "claude-sonnet-4-5",
@@ -443,10 +576,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "input_per_1m_tokens": 3.0,
+            "input_per_1m_tokens_above_200k": 6.0,
+            "output_per_1m_tokens": 15.0,
+            "cache_write_per_1m_tokens": 3.75,
+            "cache_read_per_1m_tokens": 0.3,
             "notes": ""
           },
           "api_endpoints": [
@@ -458,7 +592,13 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "anthropic",
+            "vertex_ai-anthropic_models"
+          ],
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "claude-sonnet-4-6",
@@ -475,10 +615,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "input_per_1m_tokens": 3.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 15.0,
+            "cache_write_per_1m_tokens": 3.75,
+            "cache_read_per_1m_tokens": 0.3,
             "notes": ""
           },
           "api_endpoints": [
@@ -490,7 +631,14 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "anthropic",
+            "bedrock_converse",
+            "vertex_ai-anthropic_models"
+          ],
+          "last_seen_run": "2026-05-13"
         }
       ]
     },
@@ -518,6 +666,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": 0.5,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": 1.0,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -532,7 +681,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "embedding-001",
@@ -544,6 +695,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -558,7 +710,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "flex",
@@ -571,6 +725,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": 0.15,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": 0.0195,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -585,7 +740,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini 2.5 flash",
@@ -603,6 +760,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -617,7 +775,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini 2.5 flash livepreview",
@@ -635,6 +795,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -649,7 +810,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini 2.5 flash ttspreview",
@@ -661,6 +824,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -675,7 +839,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini 2.5 flash-lite",
@@ -692,6 +858,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -706,7 +873,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini 2.5 pro",
@@ -724,6 +893,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -738,7 +908,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini 2.5 pro ttspreview",
@@ -750,6 +922,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -764,7 +937,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini 3",
@@ -777,6 +952,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -791,7 +967,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini 3 flash",
@@ -809,6 +987,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -823,7 +1002,42 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
+        },
+        {
+          "model_id": "gemini 3 pro",
+          "display_name": "gemini 3 pro",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
         },
         {
           "model_id": "gemini 3 pro previewshut down",
@@ -841,6 +1055,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -855,7 +1070,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini 3.1 flash live",
@@ -873,6 +1090,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -887,7 +1105,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini 3.1 flash livepreview",
@@ -905,6 +1125,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -919,7 +1140,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini 3.1 flash tts",
@@ -931,6 +1154,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -945,7 +1169,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini 3.1 flash ttspreview",
@@ -957,6 +1183,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -971,7 +1198,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini 3.1 flash-lite",
@@ -988,6 +1217,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1002,7 +1232,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini 3.1 pro",
@@ -1020,6 +1252,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1034,7 +1267,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini deep research maxpreview",
@@ -1047,6 +1282,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1061,7 +1297,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini deep researchpreview",
@@ -1074,6 +1312,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1088,7 +1327,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini embedding",
@@ -1100,6 +1341,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1114,7 +1356,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini embedding 2",
@@ -1126,6 +1370,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1140,7 +1385,38 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
+        },
+        {
+          "model_id": "gemini embeddings",
+          "display_name": "gemini embeddings",
+          "context_window_tokens": null,
+          "capabilities": [
+            "embedding"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
         },
         {
           "model_id": "gemini robotics-er 1.6preview",
@@ -1153,6 +1429,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1167,7 +1444,42 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
+        },
+        {
+          "model_id": "gemini roboticspreview",
+          "display_name": "gemini roboticspreview",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
         },
         {
           "model_id": "gemini-1.0-pro",
@@ -1183,6 +1495,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1197,7 +1510,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini-1.5-flash",
@@ -1215,6 +1530,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1229,7 +1545,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini-1.5-flash-002",
@@ -1247,6 +1565,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1261,7 +1580,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini-1.5-flash-8b",
@@ -1278,6 +1599,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1292,7 +1614,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini-1.5-pro",
@@ -1310,6 +1634,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1324,7 +1649,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini-1.5-pro-002",
@@ -1342,6 +1669,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1356,7 +1684,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini-2.0-flash",
@@ -1373,10 +1703,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 0.1,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 0.4,
             "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": 0.025,
             "notes": ""
           },
           "api_endpoints": [
@@ -1388,7 +1719,13 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "gemini",
+            "vertex_ai-language-models"
+          ],
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini-2.0-flash-exp",
@@ -1406,6 +1743,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1420,7 +1758,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini-2.0-flash-lite",
@@ -1436,10 +1776,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 0.075,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 0.3,
             "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": 0.01875,
             "notes": ""
           },
           "api_endpoints": [
@@ -1451,7 +1792,13 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "gemini",
+            "vertex_ai-language-models"
+          ],
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini-2.0-flash-thinking-exp",
@@ -1469,6 +1816,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1483,7 +1831,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini-2.0-pro-exp",
@@ -1501,6 +1851,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1515,7 +1866,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini-2.5-flash",
@@ -1532,10 +1885,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 0.3,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 2.5,
             "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": 0.03,
             "notes": ""
           },
           "api_endpoints": [
@@ -1547,7 +1901,13 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "gemini",
+            "vertex_ai-language-models"
+          ],
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gemini-2.5-flash-preview-09-2025",
@@ -1564,10 +1924,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 0.3,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 2.5,
             "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": 0.075,
             "notes": ""
           },
           "api_endpoints": [
@@ -1579,7 +1940,13 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "gemini",
+            "vertex_ai-language-models"
+          ],
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "imagen 4",
@@ -1591,6 +1958,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1605,7 +1973,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "imagen-3.0-generate-001",
@@ -1617,6 +1987,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1631,7 +2002,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "pricing for tools",
@@ -1644,6 +2017,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": 35.0,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": 14.0,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1658,7 +2032,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "priority",
@@ -1671,6 +2047,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": 0.54,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": 0.0702,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1685,7 +2062,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "standard",
@@ -1698,6 +2077,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": 1.0,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": 2.0,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1712,7 +2092,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "text-embedding-004",
@@ -1724,6 +2106,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1738,7 +2121,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         }
       ]
     },
@@ -1764,6 +2149,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1778,7 +2164,9 @@
           ],
           "multilingual": false,
           "is_deprecated": false,
-          "notes": "Supports 256x256, 512x512, 1024x1024"
+          "notes": "Supports 256x256, 512x512, 1024x1024",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "dall-e-3",
@@ -1790,6 +2178,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -1804,7 +2193,78 @@
           ],
           "multilingual": false,
           "is_deprecated": false,
-          "notes": "Supports 1024x1024, 1792x1024, 1024x1792"
+          "notes": "Supports 1024x1024, 1792x1024, 1024x1792",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
+        },
+        {
+          "model_id": "gpt-3",
+          "display_name": "gpt-3",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
+        },
+        {
+          "model_id": "gpt-3.5",
+          "display_name": "gpt-3.5",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "transcription",
+            "text_to_speech",
+            "image_generation",
+            "code_generation",
+            "embedding",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
         },
         {
           "model_id": "gpt-3.5-turbo",
@@ -1819,8 +2279,9 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 0.5,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 1.5,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
             "notes": ""
@@ -1834,7 +2295,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gpt-3.5-turbo-0125",
@@ -1849,8 +2312,9 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 0.5,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 1.5,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
             "notes": ""
@@ -1864,7 +2328,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gpt-4",
@@ -1879,8 +2345,9 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 30.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 60.0,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
             "notes": ""
@@ -1894,7 +2361,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gpt-4-0613",
@@ -1908,8 +2377,9 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 30.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 60.0,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
             "notes": ""
@@ -1923,7 +2393,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gpt-4-turbo",
@@ -1940,8 +2412,9 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 10.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 30.0,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
             "notes": ""
@@ -1955,7 +2428,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gpt-4-turbo-2024-04-09",
@@ -1972,8 +2447,9 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 10.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 30.0,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
             "notes": ""
@@ -1987,7 +2463,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gpt-4-turbo-preview",
@@ -2004,7 +2482,43 @@
           ],
           "pricing": {
             "currency": "USD",
+            "input_per_1m_tokens": 10.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 30.0,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
+        },
+        {
+          "model_id": "gpt-4.1",
+          "display_name": "gpt-4.1",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "text_to_speech",
+            "image_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2019,7 +2533,42 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
+        },
+        {
+          "model_id": "gpt-4.5",
+          "display_name": "gpt-4.5",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
         },
         {
           "model_id": "gpt-4o",
@@ -2036,10 +2585,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 2.5,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 10.0,
             "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": 1.25,
             "notes": ""
           },
           "api_endpoints": [
@@ -2051,7 +2601,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gpt-4o-2024-05-13",
@@ -2068,8 +2620,9 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 5.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 15.0,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
             "notes": ""
@@ -2083,7 +2636,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gpt-4o-2024-08-06",
@@ -2100,10 +2655,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 2.5,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 10.0,
             "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": 1.25,
             "notes": ""
           },
           "api_endpoints": [
@@ -2115,7 +2671,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gpt-4o-2024-11-20",
@@ -2132,10 +2690,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 2.5,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 10.0,
             "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": 1.25,
             "notes": ""
           },
           "api_endpoints": [
@@ -2147,7 +2706,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gpt-4o-audio-preview",
@@ -2161,8 +2722,9 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 2.5,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 10.0,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
             "notes": ""
@@ -2176,7 +2738,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gpt-4o-mini",
@@ -2192,10 +2756,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 0.15,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 0.6,
             "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": 0.075,
             "notes": ""
           },
           "api_endpoints": [
@@ -2207,7 +2772,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "gpt-4o-mini-2024-07-18",
@@ -2223,7 +2790,42 @@
           ],
           "pricing": {
             "currency": "USD",
+            "input_per_1m_tokens": 0.15,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 0.6,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": 0.075,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
+        },
+        {
+          "model_id": "gpt-5",
+          "display_name": "gpt-5",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "image_understanding",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2236,24 +2838,25 @@
               "notes": "OpenAI chat format"
             }
           ],
-          "multilingual": true,
+          "multilingual": false,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
         },
         {
-          "model_id": "gpt-5.4",
-          "display_name": "gpt-5.4",
+          "model_id": "gpt-5-codex",
+          "display_name": "gpt-5-codex",
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
-            "text_to_speech",
-            "image_understanding",
             "image_generation",
             "code_generation"
           ],
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2268,23 +2871,22 @@
           ],
           "multilingual": false,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
         },
         {
-          "model_id": "gpt-5.4-mini",
-          "display_name": "gpt-5.4-mini",
+          "model_id": "gpt-5.1",
+          "display_name": "gpt-5.1",
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
-            "translation",
-            "image_understanding",
-            "code_generation",
-            "function_calling",
-            "structured_output"
+            "code_generation"
           ],
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2297,24 +2899,25 @@
               "notes": "OpenAI chat format"
             }
           ],
-          "multilingual": true,
+          "multilingual": false,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
         },
         {
-          "model_id": "gpt-5.4-nano",
-          "display_name": "gpt-5.4-nano",
+          "model_id": "gpt-5.1-codex",
+          "display_name": "gpt-5.1-codex",
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
-            "translation",
-            "image_understanding",
-            "code_generation",
-            "function_calling"
+            "image_generation",
+            "code_generation"
           ],
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2327,13 +2930,46 @@
               "notes": "OpenAI chat format"
             }
           ],
-          "multilingual": true,
+          "multilingual": false,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
         },
         {
-          "model_id": "gpt-5.5",
-          "display_name": "gpt-5.5",
+          "model_id": "gpt-5.1-codex-max",
+          "display_name": "gpt-5.1-codex-max",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
+        },
+        {
+          "model_id": "gpt-5.2",
+          "display_name": "gpt-5.2",
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
@@ -2346,6 +2982,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2360,7 +2997,234 @@
           ],
           "multilingual": false,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
+        },
+        {
+          "model_id": "gpt-5.2-codex",
+          "display_name": "gpt-5.2-codex",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
+        },
+        {
+          "model_id": "gpt-5.3-codex",
+          "display_name": "gpt-5.3-codex",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
+        },
+        {
+          "model_id": "gpt-audio",
+          "display_name": "gpt-audio",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
+        },
+        {
+          "model_id": "gpt-audio-1.5",
+          "display_name": "gpt-audio-1.5",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
+        },
+        {
+          "model_id": "gpt-audio-mini",
+          "display_name": "gpt-audio-mini",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "text_to_speech",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
+        },
+        {
+          "model_id": "gpt-image-1-mini",
+          "display_name": "gpt-image-1-mini",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "text_to_speech",
+            "image_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
+        },
+        {
+          "model_id": "gpt-image-latest",
+          "display_name": "gpt-image-latest",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
         },
         {
           "model_id": "gpt-oss",
@@ -2377,6 +3241,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2391,46 +3256,16 @@
           ],
           "multilingual": false,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
         },
         {
-          "model_id": "gpt-realtime-1.5",
-          "display_name": "gpt-realtime-1.5",
+          "model_id": "gpt-oss-120b",
+          "display_name": "gpt-oss-120b",
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
-            "translation",
-            "transcription",
-            "text_to_speech",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-realtime-2",
-          "display_name": "gpt-realtime-2",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "transcription",
             "text_to_speech",
             "image_generation",
             "code_generation"
@@ -2438,6 +3273,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2450,9 +3286,105 @@
               "notes": "OpenAI chat format"
             }
           ],
-          "multilingual": true,
+          "multilingual": false,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
+        },
+        {
+          "model_id": "gpt-oss-20b",
+          "display_name": "gpt-oss-20b",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "image_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
+        },
+        {
+          "model_id": "gpt-realtime",
+          "display_name": "gpt-realtime",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
+        },
+        {
+          "model_id": "gpt-realtime-1.5",
+          "display_name": "gpt-realtime-1.5",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
         },
         {
           "model_id": "gpt-realtime-mini",
@@ -2461,9 +3393,7 @@
           "capabilities": [
             "text_generation",
             "translation",
-            "transcription",
             "text_to_speech",
-            "image_understanding",
             "code_generation",
             "function_calling",
             "structured_output"
@@ -2471,6 +3401,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2485,65 +3416,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-realtime-translate",
-          "display_name": "gpt-realtime-translate",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "transcription",
-            "text_to_speech",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "gpt-realtime-whisper",
-          "display_name": "gpt-realtime-whisper",
-          "context_window_tokens": null,
-          "capabilities": [
-            "transcription",
-            "text_to_speech"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
         },
         {
           "model_id": "o1",
@@ -2558,10 +3433,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 15.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 60.0,
             "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": 7.5,
             "notes": ""
           },
           "api_endpoints": [
@@ -2573,7 +3449,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "o1-2024-12-17",
@@ -2588,10 +3466,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 15.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 60.0,
             "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": 7.5,
             "notes": ""
           },
           "api_endpoints": [
@@ -2603,7 +3482,9 @@
           ],
           "multilingual": false,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "o1-mini",
@@ -2616,6 +3497,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2630,7 +3512,9 @@
           ],
           "multilingual": false,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "o1-mini-2024-09-12",
@@ -2643,6 +3527,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2657,7 +3542,9 @@
           ],
           "multilingual": false,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "o1-preview",
@@ -2670,6 +3557,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2684,7 +3572,9 @@
           ],
           "multilingual": false,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "o1-preview-2024-09-12",
@@ -2697,6 +3587,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2711,7 +3602,41 @@
           ],
           "multilingual": false,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
+        },
+        {
+          "model_id": "o1-pro",
+          "display_name": "o1-pro",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
         },
         {
           "model_id": "o3",
@@ -2726,10 +3651,11 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 2.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 8.0,
             "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": 0.5,
             "notes": ""
           },
           "api_endpoints": [
@@ -2741,14 +3667,19 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
         },
         {
-          "model_id": "o3-mini",
-          "display_name": "o3-mini",
-          "context_window_tokens": 200000,
+          "model_id": "o3-deep-research",
+          "display_name": "o3-deep-research",
+          "context_window_tokens": null,
           "capabilities": [
             "text_generation",
+            "text_to_speech",
+            "image_understanding",
+            "image_generation",
             "code_generation",
             "function_calling",
             "structured_output"
@@ -2756,35 +3687,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": ""
-        },
-        {
-          "model_id": "o3-mini-2025-01-31",
-          "display_name": "o3-mini (Jan 2025)",
-          "context_window_tokens": 200000,
-          "capabilities": [
-            "text_generation",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2799,7 +3702,237 @@
           ],
           "multilingual": false,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
+        },
+        {
+          "model_id": "o3-mini",
+          "display_name": "o3-mini",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": 1.1,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 4.4,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": 0.55,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
+        },
+        {
+          "model_id": "o3-mini-2025-01-31",
+          "display_name": "o3-mini (Jan 2025)",
+          "context_window_tokens": 200000,
+          "capabilities": [
+            "text_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": 1.1,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 4.4,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": 0.55,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-05-13"
+        },
+        {
+          "model_id": "o3-pro",
+          "display_name": "o3-pro",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "image_understanding",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
+        },
+        {
+          "model_id": "o4-mini",
+          "display_name": "o4-mini",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "text_to_speech",
+            "image_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
+        },
+        {
+          "model_id": "o4-mini-deep-research",
+          "display_name": "o4-mini-deep-research",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "text_to_speech",
+            "image_generation",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-03-01"
+        },
+        {
+          "model_id": "o51u",
+          "display_name": "o51u",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
+        },
+        {
+          "model_id": "o6fïöä",
+          "display_name": "o6fïöä",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "code_generation"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "text-embedding-3-large",
@@ -2811,6 +3944,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2825,7 +3959,9 @@
           ],
           "multilingual": false,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "text-embedding-3-small",
@@ -2837,6 +3973,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2851,7 +3988,9 @@
           ],
           "multilingual": false,
           "is_deprecated": false,
-          "notes": ""
+          "notes": "",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "text-embedding-ada-002",
@@ -2863,6 +4002,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2877,7 +4017,9 @@
           ],
           "multilingual": false,
           "is_deprecated": false,
-          "notes": "Legacy embedding model; prefer text-embedding-3-*"
+          "notes": "Legacy embedding model; prefer text-embedding-3-*",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "tts-1",
@@ -2889,6 +4031,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2903,7 +4046,9 @@
           ],
           "multilingual": false,
           "is_deprecated": false,
-          "notes": "6 voices: alloy, echo, fable, onyx, nova, shimmer"
+          "notes": "6 voices: alloy, echo, fable, onyx, nova, shimmer",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "tts-1-hd",
@@ -2915,6 +4060,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2929,7 +4075,9 @@
           ],
           "multilingual": false,
           "is_deprecated": false,
-          "notes": "High-definition TTS; 6 voices"
+          "notes": "High-definition TTS; 6 voices",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         },
         {
           "model_id": "whisper-1",
@@ -2941,6 +4089,7 @@
           "pricing": {
             "currency": "USD",
             "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
             "output_per_1m_tokens": null,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
@@ -2955,7 +4104,9 @@
           ],
           "multilingual": true,
           "is_deprecated": false,
-          "notes": "Supports 57 languages; charged per minute of audio"
+          "notes": "Supports 57 languages; charged per minute of audio",
+          "source": "fallback",
+          "last_seen_run": "2026-05-13"
         }
       ]
     }

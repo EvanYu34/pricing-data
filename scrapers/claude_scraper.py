@@ -56,13 +56,18 @@ _DISPLAY_TO_ID: Dict[str, str] = {
 }
 
 
+# Sort longest-first so substring match doesn't return "claude opus 4" when
+# the actual input is "Claude Opus 4.5" (which was a bug pre-v5).
+_DISPLAY_TO_ID_ORDERED = sorted(_DISPLAY_TO_ID.items(), key=lambda kv: -len(kv[0]))
+
+
 def _normalize_model_id(raw_name: str) -> str:
     """
     Convert a display-name or partial model name into the canonical API model ID.
     Falls back to a slugified version when no mapping is found.
     """
     lower = raw_name.lower().strip()
-    for pattern, model_id in _DISPLAY_TO_ID.items():
+    for pattern, model_id in _DISPLAY_TO_ID_ORDERED:
         if pattern in lower:
             return model_id
     # If the string already looks like an API ID (contains dashes, digits), keep it

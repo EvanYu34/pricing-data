@@ -1,0 +1,97 @@
+name: Daily Drift Check
+
+# Runs main.py in DRY_RUN mode every day at 03:00 UTC. Doesn't commit
+# pricing.json. If audit fails (coverage drop / fetch failure / cross-validation
+# spike), opens or comments on a single deduplicated `drift` issue.
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+jobs:
+  drift-check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install Python dependencies
+        run: pip install --upgrade pip && pip install -r requirements.txt
+
+      - name: Install Playwright Chromium + system dependencies
+        run: |
+          python -m playwright install chromium
+          python -m playwright install-deps chromium
+
+      - name: Run drift check (DRY_RUN)
+        id: scrape
+        run: |
+          python main.py
+          echo "MAIN_EXIT=$?" >> "$GITHUB_ENV"
+        continue-on-error: true
+        env:
+          PYTHONUNBUFFERED: "1"
+          DRY_RUN: "true"
+
+      - name: Write report to Job Summary
+        if: always()
+        run: |
+          echo "## 🛰️ Drift check — $(date -u +%Y-%m-%d)" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "**main.py exit code**: \`${MAIN_EXIT}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f AUDIT_REPORT.md ]; then
+            cat AUDIT_REPORT.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      # ----------------------------------------------------------------
+      # On failure, open OR comment on the single `drift` issue.
+      # Dedup pattern: at most ONE open `drift` issue at a time.
+      # ----------------------------------------------------------------
+      - name: Open or comment on drift issue
+        if: always() && env.MAIN_EXIT != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          DATE=$(date -u +%Y-%m-%d)
+          BODY_FILE=$(mktemp)
+          {
+            echo "@EvanYu34"
+            echo ""
+            echo "Drift check failed on $DATE (main.py exit=${MAIN_EXIT})."
+            echo ""
+            echo "Likely causes: litellm fetch failure, coverage drop > 5pp, or"
+            echo "scraper anti-bot ratchet."
+            echo ""
+            echo "Inspect Job Summary for the full audit report:"
+            echo "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          } > "$BODY_FILE"
+
+          existing=$(gh issue list --label drift --state open --limit 1 \
+                       --json number --jq '.[0].number' 2>/dev/null || echo "")
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body-file "$BODY_FILE"
+            echo "Commented on existing drift issue #$existing"
+          else
+            # Ensure label exists (create silently if missing)
+            gh label create drift --color "B60205" --description "Daily drift check failure" 2>/dev/null || true
+            gh issue create \
+              --label drift \
+              --title "pricing-data drift $DATE" \
+              --body-file "$BODY_FILE"
+            echo "Opened new drift issue"
+          fi

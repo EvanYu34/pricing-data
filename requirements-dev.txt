@@ -1,0 +1,6 @@
+# Developer-only dependencies. NOT installed in CI (per plan v5 §9 — CI relies
+# on the audit gate to catch regressions; pytest is for local development).
+# Install: pip install -r requirements-dev.txt
+-r requirements.txt
+pytest>=7.4
+pytest-cov>=4.1
