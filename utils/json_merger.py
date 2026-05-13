@@ -22,6 +22,8 @@ import logging
 from datetime import datetime, timezone
 from typing import Any, Dict, Optional, Set
 
+from .noise_filter import filter_provider_models
+
 logger = logging.getLogger(__name__)
 
 SCHEMA_VERSION = "2.0"
@@ -274,6 +276,16 @@ class JsonMerger:
             if provider not in merged["sources"]:
                 merged["sources"][provider] = copy.deepcopy(old_data)
                 logger.info("Merger: %s preserved from previous (not in this run)", provider)
+
+        # Final pass: drop noise model_ids (tts/whisper/embedding/dall-e/imagen,
+        # OCR junk, vague tier labels). Cleans both fresh scrapes AND legacy
+        # pricing.json entries that got polluted by earlier scraper auto-discovery.
+        for provider, block in merged["sources"].items():
+            if not isinstance(block, dict):
+                continue
+            dropped = filter_provider_models(block)
+            if dropped:
+                logger.info("Merger: %s — dropped %d noise model_ids", provider, dropped)
 
         return merged
 
