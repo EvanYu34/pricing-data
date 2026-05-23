@@ -40,16 +40,27 @@ PROVIDER_INFO: Dict[str, Any] = {
 # TODO: Extend when Google releases new models.
 # ---------------------------------------------------------------------------
 _DISPLAY_TO_ID: Dict[str, str] = {
+    # 2.5 series (added per pricing-data#5 — was showing up as
+    # "gemini 2.5 flash" with spaces and missing-price)
+    "gemini 2.5 flash": "gemini-2.5-flash",
+    "gemini 2.5 flash live": "gemini-2.5-flash-live",
+    "gemini 2.5 flash livepreview": "gemini-2.5-flash-live-preview",
+    "gemini 2.5 flash-lite": "gemini-2.5-flash-lite",
+    "gemini 2.5 flash lite": "gemini-2.5-flash-lite",
+    "gemini 2.5 pro": "gemini-2.5-pro",
+    # 2.0 series
     "gemini 2.0 flash": "gemini-2.0-flash",
     "gemini 2.0 flash lite": "gemini-2.0-flash-lite",
     "gemini 2.0 flash-lite": "gemini-2.0-flash-lite",
     "gemini 2.0 flash thinking": "gemini-2.0-flash-thinking-exp",
     "gemini 2.0 pro": "gemini-2.0-pro-exp",
+    # 1.5 series
     "gemini 1.5 pro": "gemini-1.5-pro",
     "gemini 1.5 flash": "gemini-1.5-flash",
     "gemini 1.5 flash-8b": "gemini-1.5-flash-8b",
     "gemini 1.5 flash 8b": "gemini-1.5-flash-8b",
     "gemini 1.0 pro": "gemini-1.0-pro",
+    # Embedding / imagen
     "text embedding": "text-embedding-004",
     "text-embedding-004": "text-embedding-004",
     "embedding-001": "embedding-001",
@@ -62,18 +73,38 @@ def _normalize_model_id(raw: str) -> str:
     Convert a heading or display name to a canonical Gemini model ID.
     If the raw string already looks like a model ID (contains hyphens + digits),
     return it lowercased.
+
+    Generic fallback (pricing-data#5): Google adds new versions faster than
+    we update the _DISPLAY_TO_ID table (saw 2.5, 3.x landing as
+    "gemini 2.5 flash" / "gemini 3 pro" in pricing.json). For any
+    "gemini <ver> <variant...>" string with no explicit mapping, fall back
+    to spaces→hyphens normalisation so the ID at least matches the litellm
+    canonical form (e.g. "gemini-3-pro") and the merge step lines pricing
+    up. Better-than-nothing until the table catches up.
     """
     lower = raw.lower().strip()
     # Direct match
     if lower in _DISPLAY_TO_ID:
         return _DISPLAY_TO_ID[lower]
-    # Partial match
+    # Partial match (substring of a known display name appears in raw)
     for pattern, model_id in _DISPLAY_TO_ID.items():
         if pattern in lower:
             return model_id
-    # Already an ID-like string
+    # Already an ID-like string (already has hyphens / matches our families)
     if re.match(r"gemini[-\d]|text-embedding|embedding-|imagen", lower):
         return lower
+    # Generic "gemini X[.Y] [variants...]" → "gemini-X[.Y]-variants"
+    # Catches future versions that aren't yet in _DISPLAY_TO_ID. We avoid
+    # mangling weird strings by only normalising when the prefix is the
+    # literal "gemini" family word.
+    if lower.startswith("gemini ") or lower.startswith("gemini-"):
+        # Drop trailing junk a la "gemini 3 pro previewshut down" — keep
+        # words/numbers/dots/hyphens, collapse the rest to space, then
+        # split-rejoin with hyphens.
+        cleaned = re.sub(r"[^a-z0-9.\- ]+", " ", lower)
+        parts = [p for p in cleaned.split() if p]
+        if parts:
+            return "-".join(parts)
     return lower
 
 
