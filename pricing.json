@@ -562,6 +562,44 @@
           "last_seen_run": "2026-05-25"
         },
         {
+          "model_id": "claude-opus-4-8",
+          "display_name": "claude-opus-4-8",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "image_understanding",
+            "document_processing",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": "released 2026-05-29; pricing pending scraper refresh"
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "messages",
+              "path": "/v1/messages",
+              "notes": "Anthropic native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": "manually added pending scraper catch-up",
+          "source": "manual",
+          "source_detail": [
+            "evanyu34/personal-stack manual seed"
+          ],
+          "last_seen_run": "2026-05-29"
+        },
+        {
           "model_id": "claude-sonnet-4-5",
           "display_name": "Claude Sonnet 4.5",
           "context_window_tokens": 200000,
