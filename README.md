@@ -9,17 +9,17 @@ A GitHub Actions workflow runs every Monday at UTC 00:00 and commits any changes
 ## Client fetch URL
 
 ```
-https://raw.githubusercontent.com/<YOUR_USERNAME>/<YOUR_REPO>/main/pricing.json
+https://raw.githubusercontent.com/EvanYu34/pricing-data/main/pricing.json
 ```
-
-Replace `<YOUR_USERNAME>` and `<YOUR_REPO>` with your GitHub username and repository name.
 
 Example (curl):
 
 ```bash
-curl -s https://raw.githubusercontent.com/your-username/pricing-data/main/pricing.json \
+curl -s https://raw.githubusercontent.com/EvanYu34/pricing-data/main/pricing.json \
   | python -m json.tool
 ```
+
+The `personal-stack` family consumes this via `ai_selector.default_catalog(merge_pricing=True)` — the catalog overlays this JSON onto the canonical 5-vendor model list to drive the UI dropdowns.
 
 ---
 
