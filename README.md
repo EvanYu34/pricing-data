@@ -94,6 +94,10 @@ USE_PLAYWRIGHT=1 python main.py
 | `multilingual` | bool | Whether the model supports non-English input/output |
 | `is_deprecated` | bool | Whether the model is deprecated / retired |
 | `notes` | string | Any additional notes |
+| `source` | string | Where the current **pricing values** come from: `litellm` / `scraper` / `merged` / `stale` / `fallback`. Used by the audit to gate which fields it cross-validates. |
+| `last_seen_run` | string (YYYY-MM-DD) | Last run date on which any source returned this `model_id`. Stale if it falls behind `last_updated`. |
+| `last_verified_at` | string \| null (ISO-8601 UTC) | Finer-grained timestamp of the **last successful verification** of this model_id this run. `null` for legacy entries that haven't been re-hit yet. Downstream consumers can compare to `last_updated` to detect stale model entries (e.g. price hasn't been re-verified for N weeks → use with care). |
+| `verified_source` | string \| null | The actual source that returned this model_id during its last verification: `litellm` / `scraper` / `fallback`. Distinct from `source` — that one describes where the *pricing values* come from (and can be `merged` / `stale`), while `verified_source` describes which scraper layer actually saw the model. |
 
 ### Pricing fields
 

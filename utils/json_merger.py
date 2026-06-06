@@ -185,6 +185,21 @@ def _merge_model(
             (old_model or {}).get("last_seen_run") or bootstrap_seed
         )
 
+    # last_verified_at + verified_source (issue #4):
+    #   - last_verified_at = full ISO timestamp (finer than last_seen_run's
+    #     YYYY-MM-DD). Set to now() when a source actually returned this
+    #     model_id this run; else preserve old's value (None if never seen).
+    #   - verified_source = "litellm" / "scraper" / "fallback" — which source
+    #     hit this model this run. Distinct from `source` (which describes
+    #     where the current pricing values come from, can be "merged" /
+    #     "stale" / etc.). When new_seen=True we take new_model.source as-is.
+    if new_seen:
+        base["last_verified_at"] = _utc_now_iso()
+        base["verified_source"] = (new_model or {}).get("source") or "scraper"
+    else:
+        base["last_verified_at"] = (old_model or {}).get("last_verified_at")
+        base["verified_source"] = (old_model or {}).get("verified_source")
+
     return base
 
 
