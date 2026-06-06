@@ -201,7 +201,76 @@ def test_fallback_exempt():
     assert m["source"] == "fallback"
 
 
-# Test 9: diff_summary still works on the new schema
+# Test 9a (#4): last_verified_at + verified_source set when new run hits the model
+def test_last_verified_at_set_on_hit():
+    old = _existing(_model("claude-sonnet-4-5", source="scraper"))
+    new = {
+        "claude": _provider_block(_model(
+            "claude-sonnet-4-5",
+            pricing={**_empty_pricing(), "input_per_1m_tokens": 3.0},
+            source="litellm",
+        )),
+    }
+    merged = JsonMerger().merge(old, new)
+    m = merged["sources"]["claude"]["models"][0]
+    # ISO timestamp (full, not just date)
+    assert m["last_verified_at"] is not None
+    assert "T" in m["last_verified_at"] and m["last_verified_at"].endswith("Z")
+    assert m["verified_source"] == "litellm"
+
+
+# Test 9b (#4): last_verified_at preserved when model not in this run's data
+def test_last_verified_at_preserved_on_miss():
+    old = _existing(
+        _model("claude-sonnet-4-5",
+               last_verified_at="2026-04-01T12:00:00Z",
+               verified_source="litellm"),
+        _model("claude-deprecated-old",
+               last_verified_at="2026-02-15T08:30:00Z",
+               verified_source="scraper",
+               pricing={**_empty_pricing(), "input_per_1m_tokens": 1.0}),
+    )
+    # New run only has claude-sonnet-4-5, missing claude-deprecated-old
+    new = {
+        "claude": _provider_block(_model("claude-sonnet-4-5", source="litellm")),
+    }
+    merged = JsonMerger().merge(old, new)
+    models = {m["model_id"]: m for m in merged["sources"]["claude"]["models"]}
+    # Preserved model keeps its old last_verified_at + verified_source untouched
+    assert models["claude-deprecated-old"]["last_verified_at"] == "2026-02-15T08:30:00Z"
+    assert models["claude-deprecated-old"]["verified_source"] == "scraper"
+
+
+# Test 9c (#4): legacy entries (no last_verified_at) bootstrap to None on miss,
+# get filled on hit
+def test_last_verified_at_legacy_bootstrap():
+    # Legacy old has neither last_verified_at nor verified_source
+    old = {
+        "last_updated": "2026-03-01T00:00:00Z",
+        "schema_version": "2.0",
+        "sources": {"claude": {
+            "fetch_status": "success",
+            "models": [
+                {"model_id": "claude-hit",     "pricing": _empty_pricing()},
+                {"model_id": "claude-no-hit",  "pricing": _empty_pricing()},
+            ],
+        }},
+    }
+    # claude-hit gets hit this run; claude-no-hit dropped from new
+    new = {
+        "claude": _provider_block(_model("claude-hit", source="litellm")),
+    }
+    merged = JsonMerger().merge(old, new)
+    models = {m["model_id"]: m for m in merged["sources"]["claude"]["models"]}
+    # Hit → filled in
+    assert models["claude-hit"]["last_verified_at"] is not None
+    assert models["claude-hit"]["verified_source"] == "litellm"
+    # Miss + legacy → both None (no info to preserve)
+    assert models["claude-no-hit"]["last_verified_at"] is None
+    assert models["claude-no-hit"]["verified_source"] is None
+
+
+# Test 10: diff_summary still works on the new schema
 def test_diff_summary_compatibility():
     old = _existing(_model("model-a"), _model("model-b"))
     new = {
