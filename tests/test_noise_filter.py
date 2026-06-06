@@ -73,6 +73,27 @@ from utils.noise_filter import is_noise_model_id, filter_provider_models
     # All-digit / pure-numeric — not a model id
     ("3.5", True),
     ("1.5.0", True),
+
+    # Whitespace = scraper tokenization bug (#5)
+    ("gemini 2.5 flash", True),
+    ("gemini 3 pro", True),
+    ("gemini 2.5 flash-lite", True),
+    # Scraper-concat bugs (#5)
+    ("gemini-3-pro-previewshut-down", True),
+    ("gemini-3.1-flash-livepreview", True),
+    # OpenAI scraper junk added to TIER_ALIASES (#5)
+    ("gpt-audio", True),
+    ("gpt-audio-1.5", True),
+    ("gpt-audio-mini", True),
+    ("gpt-image-latest", True),
+    ("gpt-oss", True),
+    ("gpt-oss-120b", True),
+    ("gpt-oss-20b", True),
+    ("gpt-5-codex", True),
+    ("gpt-5.1-codex-max", True),
+    # ...but real chat models adjacent stay
+    ("gpt-4o-audio-preview", False),    # has "audio" in name but is real chat-with-audio
+    ("gemini-2.5-pro", False),          # has digits but valid model_id
 ])
 def test_is_noise_model_id(model_id, is_noise):
     assert is_noise_model_id(model_id) is is_noise, f"{model_id!r} should be noise={is_noise}"

@@ -63,6 +63,19 @@ def _load_fallback_model_ids() -> Dict[str, Set[str]]:
     }
 
 
+def _load_pricing_fallback() -> Dict[str, Dict[str, Dict[str, Any]]]:
+    """Return {provider_key: {model_id: {pricing_field: value, ...}}} from the
+    hand-maintained PRICING_FALLBACK dict. Used as the lowest-priority pricing
+    source — only consulted when both old + new return all-None pricing for
+    that model.
+    """
+    try:
+        from scrapers.capabilities_fallback import PRICING_FALLBACK
+    except ImportError:
+        return {}
+    return PRICING_FALLBACK
+
+
 def _has_any_price(pricing: Dict[str, Any]) -> bool:
     """True if any of the canonical pricing fields is non-None."""
     if not pricing:
@@ -139,6 +152,7 @@ def _merge_model(
     today: str,
     bootstrap_seed: str,
     fallback_ids: Set[str],
+    fallback_pricing: Optional[Dict[str, Dict[str, Any]]] = None,
 ) -> Dict[str, Any]:
     """Combine an old and/or new model record into one merged record.
 
@@ -167,6 +181,23 @@ def _merge_model(
     old_p = (old_model or {}).get("pricing") or {}
     new_p = (new_model or {}).get("pricing") or {}
     base["pricing"] = _merge_pricing(old_p, new_p)
+
+    # Pricing fallback (issue #5): if both old+new sides returned all-None
+    # for the canonical pricing fields AND this model_id has a hand-maintained
+    # entry in PRICING_FALLBACK, fill it in. Lowest priority — never overwrites
+    # a real scraper price. Applied BEFORE source derivation so the fallback
+    # values are visible to _derive_source.
+    if fallback_pricing and not _has_any_price(base["pricing"]):
+        fb = fallback_pricing.get(model_id)
+        if fb:
+            for field in PRICING_FIELDS:
+                if field in fb and base["pricing"].get(field) is None:
+                    base["pricing"][field] = fb[field]
+            # currency / notes: only set if not already there
+            if not base["pricing"].get("currency"):
+                base["pricing"]["currency"] = fb.get("currency", "USD")
+            if not base["pricing"].get("notes") and fb.get("notes"):
+                base["pricing"]["notes"] = fb["notes"]
 
     # source: derive via 5-tier priority
     new_seen = new_model is not None
@@ -221,6 +252,7 @@ class JsonMerger:
         bootstrap_seed = old_last_updated[:10] if old_last_updated else "1970-01-01"
 
         fallback_ids_by_provider = _load_fallback_model_ids()
+        pricing_fallback_by_provider = _load_pricing_fallback()
 
         merged: Dict[str, Any] = {
             "last_updated": now,
@@ -235,6 +267,7 @@ class JsonMerger:
 
         for provider, provider_data in new_results.items():
             fallback_ids = fallback_ids_by_provider.get(provider, set())
+            pricing_fallback = pricing_fallback_by_provider.get(provider, {})
 
             if provider_data.get("fetch_status") != "success" or not provider_data.get("models"):
                 # New fetch failed → preserve old block wholesale, stamp failure metadata.
@@ -270,6 +303,7 @@ class JsonMerger:
                         today=today,
                         bootstrap_seed=bootstrap_seed,
                         fallback_ids=fallback_ids,
+                        fallback_pricing=pricing_fallback,
                     )
                 )
 
