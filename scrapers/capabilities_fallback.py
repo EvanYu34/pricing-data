@@ -714,6 +714,128 @@ def get_endpoints(provider: str, model_id: str) -> list:
     return PROVIDER_DEFAULT_ENDPOINTS.get(provider, [])
 
 
+# ---------------------------------------------------------------------------
+# Pricing fallback (issue #5)
+# ---------------------------------------------------------------------------
+#
+# Hand-maintained per-1M-token prices for models that litellm + scrapers
+# both miss. JsonMerger uses this as the LOWEST priority — only used when
+# both old + new pricing are all-None. Adding an entry here marks the model
+# with source="fallback".
+#
+# **Each entry MUST include a `_source_url` (or `_source` for verbal source)
+# in notes** so 6 months from now we can re-verify. Without source the entry
+# rots silently when the vendor changes prices.
+#
+# Pricing tier rule for Gemini's 2-tier ≤128k / >128k structure: we use the
+# ≤128k tier as `input_per_1m_tokens` (the common case for short prompts)
+# and stash the >128k value in `input_per_1m_tokens_above_200k` (close
+# enough — Gemini's break is 128k, schema uses 200k).
+PRICING_FALLBACK = {
+    "gemini": {
+        # Gemini 1.5 family — pricing per https://ai.google.dev/pricing
+        # (verified 2026-06-06).
+        "gemini-1.5-flash": {
+            "input_per_1m_tokens": 0.075,
+            "input_per_1m_tokens_above_200k": 0.15,
+            "output_per_1m_tokens": 0.30,
+            "notes": "≤128k: $0.075/$0.30; >128k: $0.15/$0.60. Source: ai.google.dev/pricing",
+        },
+        "gemini-1.5-flash-002": {
+            "input_per_1m_tokens": 0.075,
+            "input_per_1m_tokens_above_200k": 0.15,
+            "output_per_1m_tokens": 0.30,
+            "notes": "Same as gemini-1.5-flash. Source: ai.google.dev/pricing",
+        },
+        "gemini-1.5-flash-8b": {
+            "input_per_1m_tokens": 0.0375,
+            "input_per_1m_tokens_above_200k": 0.075,
+            "output_per_1m_tokens": 0.15,
+            "notes": "8B variant ≤128k: $0.0375/$0.15. Source: ai.google.dev/pricing",
+        },
+        "gemini-1.5-pro": {
+            "input_per_1m_tokens": 1.25,
+            "input_per_1m_tokens_above_200k": 2.50,
+            "output_per_1m_tokens": 5.00,
+            "notes": "≤128k: $1.25/$5.00; >128k: $2.50/$10.00. Source: ai.google.dev/pricing",
+        },
+        "gemini-1.5-pro-002": {
+            "input_per_1m_tokens": 1.25,
+            "input_per_1m_tokens_above_200k": 2.50,
+            "output_per_1m_tokens": 5.00,
+            "notes": "Same as gemini-1.5-pro. Source: ai.google.dev/pricing",
+        },
+        "gemini-1.0-pro": {
+            "input_per_1m_tokens": 0.50,
+            "output_per_1m_tokens": 1.50,
+            "notes": "Deprecated 2025-02. Source: ai.google.dev/pricing (archived)",
+        },
+        # Gemini 2.0 experimental — free during preview window (no formal
+        # pricing). Set to 0.0 + note rather than null so audit doesn't
+        # complain about missing input price.
+        "gemini-2.0-flash-exp": {
+            "input_per_1m_tokens": 0.0,
+            "output_per_1m_tokens": 0.0,
+            "notes": "Free during experimental preview. Source: ai.google.dev/pricing (preview tier)",
+        },
+        "gemini-2.0-flash-thinking-exp": {
+            "input_per_1m_tokens": 0.0,
+            "output_per_1m_tokens": 0.0,
+            "notes": "Free during experimental preview. Source: ai.google.dev/pricing",
+        },
+        "gemini-2.0-pro-exp": {
+            "input_per_1m_tokens": 0.0,
+            "output_per_1m_tokens": 0.0,
+            "notes": "Free during experimental preview. Source: ai.google.dev/pricing",
+        },
+    },
+    "openai": {
+        # o1 reasoning family — pricing per https://openai.com/api/pricing
+        # (verified 2026-06-06).
+        "o1-mini": {
+            "input_per_1m_tokens": 3.00,
+            "output_per_1m_tokens": 12.00,
+            "cache_read_per_1m_tokens": 1.50,
+            "notes": "Source: openai.com/api/pricing (o1-mini line)",
+        },
+        "o1-mini-2024-09-12": {
+            "input_per_1m_tokens": 3.00,
+            "output_per_1m_tokens": 12.00,
+            "cache_read_per_1m_tokens": 1.50,
+            "notes": "Dated snapshot of o1-mini. Source: openai.com/api/pricing",
+        },
+        "o1-preview": {
+            "input_per_1m_tokens": 15.00,
+            "output_per_1m_tokens": 60.00,
+            "cache_read_per_1m_tokens": 7.50,
+            "notes": "Source: openai.com/api/pricing (o1-preview line)",
+        },
+        "o1-preview-2024-09-12": {
+            "input_per_1m_tokens": 15.00,
+            "output_per_1m_tokens": 60.00,
+            "cache_read_per_1m_tokens": 7.50,
+            "notes": "Dated snapshot of o1-preview. Source: openai.com/api/pricing",
+        },
+        "o1-pro": {
+            "input_per_1m_tokens": 150.00,
+            "output_per_1m_tokens": 600.00,
+            "notes": "Pro tier. Source: openai.com/api/pricing (o1-pro line)",
+        },
+    },
+}
+
+
+def get_fallback_pricing(provider: str, model_id: str) -> dict | None:
+    """Return hand-maintained pricing dict for (provider, model_id), or None.
+
+    Used by JsonMerger as the lowest-priority source — only consulted when
+    both old + new sides return all-None pricing. Adding entries here +
+    re-running scrapes is the issue#5 path to boost coverage for models
+    litellm doesn't track (legacy / preview / pro-tier).
+    """
+    return PRICING_FALLBACK.get(provider, {}).get(model_id)
+
+
 def get_capabilities(provider: str, model_id: str, doc_text: str = "") -> list:
     """
     Return capability list for a given provider/model.

@@ -270,6 +270,54 @@ def test_last_verified_at_legacy_bootstrap():
     assert models["claude-no-hit"]["verified_source"] is None
 
 
+# Test 9d (#5): PRICING_FALLBACK fills in when both old + new have no pricing,
+# and only when the model_id is actually in the fallback dict
+def test_pricing_fallback_fills_when_both_sides_empty():
+    # gemini-1.5-pro IS in the new PRICING_FALLBACK (verified via capabilities_fallback.PRICING_FALLBACK).
+    # Both old + new give empty pricing → fallback should kick in.
+    old = {
+        "last_updated": "2026-03-01T00:00:00Z",
+        "schema_version": "2.0",
+        "sources": {"gemini": {
+            "fetch_status": "success",
+            "models": [{"model_id": "gemini-1.5-pro", "pricing": _empty_pricing()}],
+        }},
+    }
+    new = {
+        "gemini": {
+            "fetch_status": "success",
+            "models": [{"model_id": "gemini-1.5-pro", "pricing": _empty_pricing()}],
+        },
+    }
+    merged = JsonMerger().merge(old, new)
+    m = merged["sources"]["gemini"]["models"][0]
+    # Fallback pricing should be present
+    assert m["pricing"]["input_per_1m_tokens"] == 1.25
+    assert m["pricing"]["output_per_1m_tokens"] == 5.00
+
+
+def test_pricing_fallback_does_not_overwrite_real_price():
+    # If new pricing exists, fallback must NOT touch it.
+    old = {
+        "last_updated": "2026-03-01T00:00:00Z",
+        "schema_version": "2.0",
+        "sources": {"gemini": {"fetch_status": "success", "models": []}},
+    }
+    new = {
+        "gemini": {
+            "fetch_status": "success",
+            "models": [{
+                "model_id": "gemini-1.5-pro",
+                "pricing": {**_empty_pricing(), "input_per_1m_tokens": 999.99},
+            }],
+        },
+    }
+    merged = JsonMerger().merge(old, new)
+    m = merged["sources"]["gemini"]["models"][0]
+    # Real (fake-test) price preserved, fallback didn't touch
+    assert m["pricing"]["input_per_1m_tokens"] == 999.99
+
+
 # Test 10: diff_summary still works on the new schema
 def test_diff_summary_compatibility():
     old = _existing(_model("model-a"), _model("model-b"))

@@ -33,7 +33,30 @@ NON_CHAT_SUBSTRINGS = (
 TIER_ALIASES = {
     "standard", "priority", "flex", "scale", "batch",
     "pricing for tools", "preview", "ga",
+    # OpenAI scraper junk (#5): audio-only / image-only / open-weights /
+    # category labels that aren't usable chat-API IDs in the dropdown.
+    "gpt-audio", "gpt-audio-1.5", "gpt-audio-mini",
+    "gpt-image-latest", "gpt-image",
+    "gpt-oss", "gpt-oss-120b", "gpt-oss-20b",
+    # codex line retired 2023; "gpt-5-codex" / "gpt-5.1-codex-max" / etc.
+    # are scraper artifacts from upcoming-product blurbs, not real IDs.
+    "gpt-5-codex", "gpt-5.1-codex", "gpt-5.1-codex-max",
+    "gpt-5.2-codex", "gpt-5.3-codex",
 }
+
+
+# Substrings that flag scraper-concat bugs (whitespace stripped during
+# tokenization fused two words). Distinct from NON_CHAT_SUBSTRINGS — these
+# describe noise *pipeline*, not capability class.
+_SCRAPER_BUG_SUBSTRINGS = (
+    "previewshut-down",   # "preview shut-down" lost the space
+    "livepreview",        # "live preview" lost the space
+)
+
+
+def _has_whitespace(model_id: str) -> bool:
+    """Real model_ids are token-safe (a-z 0-9 . -). Whitespace = scraper bug."""
+    return any(c.isspace() for c in model_id)
 
 # Junk regex patterns. `o51u` / `o6f...` are OCR artifacts from JS bundles.
 # Real OpenAI reasoning models (`o1`, `o3`, `o4-mini`) follow letter+digits
@@ -70,11 +93,18 @@ def is_noise_model_id(model_id: str) -> bool:
         return True
     if _JUNK_RE.match(model_id.casefold()):
         return True
+    # Whitespace in model_id = scraper tokenization bug (e.g. "gemini 2.5 flash").
+    # Real Google / OpenAI / Anthropic API IDs only use [a-z0-9.-].
+    if _has_whitespace(model_id):
+        return True
 
     lo = model_id.casefold()
     if lo in TIER_ALIASES:
         return True
     for sub in NON_CHAT_SUBSTRINGS:
+        if sub in lo:
+            return True
+    for sub in _SCRAPER_BUG_SUBSTRINGS:
         if sub in lo:
             return True
     return False
