@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01T03:30:58Z",
+  "last_updated": "2026-06-08T03:27:56Z",
   "schema_version": "2.0",
   "attribution": {
     "litellm": "https://github.com/BerriAI/litellm — MIT"
@@ -53,7 +53,9 @@
             "bedrock",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "claude-3-5-sonnet-20240620",
@@ -92,7 +94,9 @@
             "bedrock",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "claude-3-5-sonnet-20241022",
@@ -127,7 +131,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "claude-3-7-sonnet-20250219",
@@ -168,7 +174,9 @@
             "bedrock_converse",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "claude-3-haiku-20240307",
@@ -207,7 +215,9 @@
             "bedrock",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "claude-3-opus-20240229",
@@ -247,7 +257,9 @@
             "bedrock",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "claude-3-sonnet-20240229",
@@ -286,7 +298,9 @@
             "bedrock",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "claude-haiku-4-5",
@@ -325,7 +339,9 @@
             "anthropic",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "claude-haiku-4-5-20251001",
@@ -365,7 +381,9 @@
             "bedrock_converse",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "claude-haiku-4-5-20251001-v1",
@@ -405,7 +423,9 @@
             "bedrock_converse",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "claude-opus-4-5",
@@ -444,7 +464,9 @@
             "anthropic",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "claude-opus-4-6",
@@ -484,7 +506,9 @@
             "bedrock_converse",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "claude-opus-4-6-v1",
@@ -519,7 +543,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-03-01"
+          "last_seen_run": "2026-03-01",
+          "last_verified_at": null,
+          "verified_source": null
         },
         {
           "model_id": "claude-opus-4-7",
@@ -559,7 +585,9 @@
             "bedrock_converse",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-05-25"
+          "last_seen_run": "2026-05-25",
+          "last_verified_at": null,
+          "verified_source": null
         },
         {
           "model_id": "claude-opus-4-8",
@@ -599,7 +627,9 @@
             "bedrock_converse",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "claude-sonnet-4-5",
@@ -638,7 +668,9 @@
             "anthropic",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "claude-sonnet-4-6",
@@ -678,7 +710,9 @@
             "bedrock_converse",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         }
       ]
     },
@@ -696,452 +730,6 @@
       },
       "models": [
         {
-          "model_id": "gemini 2.5 flash",
-          "display_name": "gemini 2.5 flash",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "image_understanding",
-            "document_processing",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-05-25"
-        },
-        {
-          "model_id": "gemini 2.5 flash livepreview",
-          "display_name": "gemini 2.5 flash livepreview",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "image_understanding",
-            "document_processing",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-05-25"
-        },
-        {
-          "model_id": "gemini 2.5 flash-lite",
-          "display_name": "gemini 2.5 flash-lite",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "image_understanding",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-05-25"
-        },
-        {
-          "model_id": "gemini 2.5 pro",
-          "display_name": "gemini 2.5 pro",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "image_understanding",
-            "document_processing",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-05-25"
-        },
-        {
-          "model_id": "gemini 3",
-          "display_name": "gemini 3",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-05-25"
-        },
-        {
-          "model_id": "gemini 3 flash",
-          "display_name": "gemini 3 flash",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "image_understanding",
-            "document_processing",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-05-25"
-        },
-        {
-          "model_id": "gemini 3 pro",
-          "display_name": "gemini 3 pro",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-03-01"
-        },
-        {
-          "model_id": "gemini 3 pro previewshut down",
-          "display_name": "gemini 3 pro previewshut down",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "image_understanding",
-            "document_processing",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-05-25"
-        },
-        {
-          "model_id": "gemini 3.1 flash live",
-          "display_name": "gemini 3.1 flash live",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "image_understanding",
-            "document_processing",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-05-25"
-        },
-        {
-          "model_id": "gemini 3.1 flash livepreview",
-          "display_name": "gemini 3.1 flash livepreview",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "image_understanding",
-            "document_processing",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-05-25"
-        },
-        {
-          "model_id": "gemini 3.1 flash-lite",
-          "display_name": "gemini 3.1 flash-lite",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "image_understanding",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-05-25"
-        },
-        {
-          "model_id": "gemini 3.1 pro",
-          "display_name": "gemini 3.1 pro",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "image_understanding",
-            "document_processing",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-05-25"
-        },
-        {
-          "model_id": "gemini 3.5 flash",
-          "display_name": "gemini 3.5 flash",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "image_understanding",
-            "document_processing",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-05-25"
-        },
-        {
           "model_id": "gemini-1.0-pro",
           "display_name": "Gemini 1.0 Pro",
           "context_window_tokens": 32760,
@@ -1154,12 +742,12 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
+            "input_per_1m_tokens": 0.5,
             "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
+            "output_per_1m_tokens": 1.5,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
-            "notes": ""
+            "notes": "Deprecated 2025-02. Source: ai.google.dev/pricing (archived)"
           },
           "api_endpoints": [
             {
@@ -1172,7 +760,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "fallback",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-1.5-flash",
@@ -1189,12 +779,12 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 0.075,
+            "input_per_1m_tokens_above_200k": 0.15,
+            "output_per_1m_tokens": 0.3,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
-            "notes": ""
+            "notes": "≤128k: $0.075/$0.30; >128k: $0.15/$0.60. Source: ai.google.dev/pricing"
           },
           "api_endpoints": [
             {
@@ -1207,7 +797,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "fallback",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-1.5-flash-002",
@@ -1224,12 +816,12 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 0.075,
+            "input_per_1m_tokens_above_200k": 0.15,
+            "output_per_1m_tokens": 0.3,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
-            "notes": ""
+            "notes": "Same as gemini-1.5-flash. Source: ai.google.dev/pricing"
           },
           "api_endpoints": [
             {
@@ -1242,7 +834,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "fallback",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-1.5-flash-8b",
@@ -1258,12 +852,12 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 0.0375,
+            "input_per_1m_tokens_above_200k": 0.075,
+            "output_per_1m_tokens": 0.15,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
-            "notes": ""
+            "notes": "8B variant ≤128k: $0.0375/$0.15. Source: ai.google.dev/pricing"
           },
           "api_endpoints": [
             {
@@ -1276,7 +870,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "fallback",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-1.5-pro",
@@ -1293,12 +889,12 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 1.25,
+            "input_per_1m_tokens_above_200k": 2.5,
+            "output_per_1m_tokens": 5.0,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
-            "notes": ""
+            "notes": "≤128k: $1.25/$5.00; >128k: $2.50/$10.00. Source: ai.google.dev/pricing"
           },
           "api_endpoints": [
             {
@@ -1311,7 +907,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "fallback",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-1.5-pro-002",
@@ -1328,12 +926,12 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
+            "input_per_1m_tokens": 1.25,
+            "input_per_1m_tokens_above_200k": 2.5,
+            "output_per_1m_tokens": 5.0,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
-            "notes": ""
+            "notes": "Same as gemini-1.5-pro. Source: ai.google.dev/pricing"
           },
           "api_endpoints": [
             {
@@ -1346,7 +944,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "fallback",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-2.0-flash",
@@ -1385,7 +985,9 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gemini-2.0-flash-exp",
@@ -1402,12 +1004,12 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
+            "input_per_1m_tokens": 0.0,
             "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
+            "output_per_1m_tokens": 0.0,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
-            "notes": ""
+            "notes": "Free during experimental preview. Source: ai.google.dev/pricing (preview tier)"
           },
           "api_endpoints": [
             {
@@ -1420,7 +1022,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "fallback",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-2.0-flash-lite",
@@ -1458,7 +1062,9 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gemini-2.0-flash-thinking-exp",
@@ -1475,12 +1081,12 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
+            "input_per_1m_tokens": 0.0,
             "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
+            "output_per_1m_tokens": 0.0,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
-            "notes": ""
+            "notes": "Free during experimental preview. Source: ai.google.dev/pricing"
           },
           "api_endpoints": [
             {
@@ -1493,7 +1099,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "fallback",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-2.0-pro-exp",
@@ -1510,12 +1118,12 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
+            "input_per_1m_tokens": 0.0,
             "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
+            "output_per_1m_tokens": 0.0,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
-            "notes": ""
+            "notes": "Free during experimental preview. Source: ai.google.dev/pricing"
           },
           "api_endpoints": [
             {
@@ -1528,7 +1136,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "fallback",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-2.5-flash",
@@ -1567,7 +1177,9 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gemini-2.5-flash-lite",
@@ -1605,7 +1217,9 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gemini-2.5-flash-live-preview",
@@ -1640,7 +1254,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-2.5-flash-preview-09-2025",
@@ -1679,7 +1295,9 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gemini-2.5-pro",
@@ -1718,7 +1336,9 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gemini-3",
@@ -1748,7 +1368,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-3-flash",
@@ -1783,42 +1405,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-06-01"
-        },
-        {
-          "model_id": "gemini-3-pro-previewshut-down",
-          "display_name": "gemini-3-pro-previewshut-down",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "image_understanding",
-            "document_processing",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-3.1-flash-lite",
@@ -1856,41 +1445,9 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-06-01"
-        },
-        {
-          "model_id": "gemini-3.1-flash-lite-previewshut-down",
-          "display_name": "gemini-3.1-flash-lite-previewshut-down",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "image_understanding",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gemini-3.1-flash-live",
@@ -1925,42 +1482,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-06-01"
-        },
-        {
-          "model_id": "gemini-3.1-flash-livepreview",
-          "display_name": "gemini-3.1-flash-livepreview",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "image_understanding",
-            "document_processing",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-3.1-pro",
@@ -1995,7 +1519,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-3.5-flash",
@@ -2034,7 +1560,9 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         }
       ]
     },
@@ -2080,7 +1608,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-03-01"
+          "last_seen_run": "2026-03-01",
+          "last_verified_at": null,
+          "verified_source": null
         },
         {
           "model_id": "gpt-3.5",
@@ -2117,7 +1647,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-03-01"
+          "last_seen_run": "2026-03-01",
+          "last_verified_at": null,
+          "verified_source": null
         },
         {
           "model_id": "gpt-3.5-turbo",
@@ -2150,7 +1682,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gpt-3.5-turbo-0125",
@@ -2183,7 +1717,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gpt-4",
@@ -2216,7 +1752,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gpt-4-0613",
@@ -2248,7 +1786,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gpt-4-turbo",
@@ -2283,7 +1823,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gpt-4-turbo-2024-04-09",
@@ -2318,7 +1860,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gpt-4-turbo-preview",
@@ -2353,7 +1897,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gpt-4.1",
@@ -2388,7 +1934,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-03-01"
+          "last_seen_run": "2026-03-01",
+          "last_verified_at": null,
+          "verified_source": null
         },
         {
           "model_id": "gpt-4.5",
@@ -2421,7 +1969,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-03-01"
+          "last_seen_run": "2026-03-01",
+          "last_verified_at": null,
+          "verified_source": null
         },
         {
           "model_id": "gpt-4o",
@@ -2456,7 +2006,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gpt-4o-2024-05-13",
@@ -2491,7 +2043,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gpt-4o-2024-08-06",
@@ -2526,7 +2080,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gpt-4o-2024-11-20",
@@ -2561,7 +2117,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gpt-4o-audio-preview",
@@ -2593,7 +2151,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gpt-4o-mini",
@@ -2627,7 +2187,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gpt-4o-mini-2024-07-18",
@@ -2661,7 +2223,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gpt-5",
@@ -2695,38 +2259,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-03-01"
-        },
-        {
-          "model_id": "gpt-5-codex",
-          "display_name": "gpt-5-codex",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-03-01"
+          "last_seen_run": "2026-03-01",
+          "last_verified_at": null,
+          "verified_source": null
         },
         {
           "model_id": "gpt-5.1",
@@ -2756,69 +2291,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-03-01"
-        },
-        {
-          "model_id": "gpt-5.1-codex",
-          "display_name": "gpt-5.1-codex",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-03-01"
-        },
-        {
-          "model_id": "gpt-5.1-codex-max",
-          "display_name": "gpt-5.1-codex-max",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-03-01"
+          "last_seen_run": "2026-03-01",
+          "last_verified_at": null,
+          "verified_source": null
         },
         {
           "model_id": "gpt-5.2",
@@ -2852,69 +2327,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-03-01"
-        },
-        {
-          "model_id": "gpt-5.2-codex",
-          "display_name": "gpt-5.2-codex",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-03-01"
-        },
-        {
-          "model_id": "gpt-5.3-codex",
-          "display_name": "gpt-5.3-codex",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-03-01"
+          "last_seen_run": "2026-03-01",
+          "last_verified_at": null,
+          "verified_source": null
         },
         {
           "model_id": "gpt-5.4",
@@ -2947,7 +2362,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gpt-5.4-mini",
@@ -2981,7 +2398,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gpt-5.4-nano",
@@ -3014,7 +2433,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "gpt-5.5",
@@ -3048,233 +2469,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
-        },
-        {
-          "model_id": "gpt-audio",
-          "display_name": "gpt-audio",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-03-01"
-        },
-        {
-          "model_id": "gpt-audio-1.5",
-          "display_name": "gpt-audio-1.5",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-03-01"
-        },
-        {
-          "model_id": "gpt-audio-mini",
-          "display_name": "gpt-audio-mini",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "text_to_speech",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-03-01"
-        },
-        {
-          "model_id": "gpt-image-latest",
-          "display_name": "gpt-image-latest",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-03-01"
-        },
-        {
-          "model_id": "gpt-oss",
-          "display_name": "gpt-oss",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "image_understanding",
-            "image_generation",
-            "code_generation",
-            "function_calling"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-06-01"
-        },
-        {
-          "model_id": "gpt-oss-120b",
-          "display_name": "gpt-oss-120b",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-03-01"
-        },
-        {
-          "model_id": "gpt-oss-20b",
-          "display_name": "gpt-oss-20b",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "chat_completions",
-              "path": "/v1/chat/completions",
-              "notes": "OpenAI chat format"
-            }
-          ],
-          "multilingual": false,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-03-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "o1",
@@ -3307,7 +2504,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "o1-2024-12-17",
@@ -3340,7 +2539,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "o1-mini",
@@ -3352,12 +2553,12 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
+            "input_per_1m_tokens": 3.0,
             "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
+            "output_per_1m_tokens": 12.0,
             "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
+            "cache_read_per_1m_tokens": 1.5,
+            "notes": "Source: openai.com/api/pricing (o1-mini line)"
           },
           "api_endpoints": [
             {
@@ -3370,7 +2571,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "fallback",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "o1-mini-2024-09-12",
@@ -3382,12 +2585,12 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
+            "input_per_1m_tokens": 3.0,
             "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
+            "output_per_1m_tokens": 12.0,
             "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
+            "cache_read_per_1m_tokens": 1.5,
+            "notes": "Dated snapshot of o1-mini. Source: openai.com/api/pricing"
           },
           "api_endpoints": [
             {
@@ -3400,7 +2603,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "fallback",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "o1-preview",
@@ -3412,12 +2617,12 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
+            "input_per_1m_tokens": 15.0,
             "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
+            "output_per_1m_tokens": 60.0,
             "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
+            "cache_read_per_1m_tokens": 7.5,
+            "notes": "Source: openai.com/api/pricing (o1-preview line)"
           },
           "api_endpoints": [
             {
@@ -3430,7 +2635,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "fallback",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "o1-preview-2024-09-12",
@@ -3442,12 +2649,12 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
+            "input_per_1m_tokens": 15.0,
             "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
+            "output_per_1m_tokens": 60.0,
             "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
+            "cache_read_per_1m_tokens": 7.5,
+            "notes": "Dated snapshot of o1-preview. Source: openai.com/api/pricing"
           },
           "api_endpoints": [
             {
@@ -3460,7 +2667,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "fallback",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "o1-pro",
@@ -3474,12 +2683,12 @@
           ],
           "pricing": {
             "currency": "USD",
-            "input_per_1m_tokens": null,
+            "input_per_1m_tokens": 150.0,
             "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
+            "output_per_1m_tokens": 600.0,
             "cache_write_per_1m_tokens": null,
             "cache_read_per_1m_tokens": null,
-            "notes": ""
+            "notes": "Pro tier. Source: openai.com/api/pricing (o1-pro line)"
           },
           "api_endpoints": [
             {
@@ -3492,7 +2701,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-03-01"
+          "last_seen_run": "2026-03-01",
+          "last_verified_at": null,
+          "verified_source": null
         },
         {
           "model_id": "o3",
@@ -3525,7 +2736,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "o3-mini",
@@ -3557,7 +2770,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "o3-mini-2025-01-31",
@@ -3589,7 +2804,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-06-01"
+          "last_seen_run": "2026-06-08",
+          "last_verified_at": "2026-06-08T03:27:56Z",
+          "verified_source": "litellm"
         },
         {
           "model_id": "o3-pro",
@@ -3623,7 +2840,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-03-01"
+          "last_seen_run": "2026-03-01",
+          "last_verified_at": null,
+          "verified_source": null
         },
         {
           "model_id": "o4-mini",
@@ -3658,7 +2877,9 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-03-01"
+          "last_seen_run": "2026-03-01",
+          "last_verified_at": null,
+          "verified_source": null
         }
       ]
     }
