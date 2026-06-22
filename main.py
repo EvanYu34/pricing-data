@@ -22,7 +22,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List
 
-from scrapers import ClaudeScraper, GeminiScraper, OpenAIScraper
+from scrapers import (
+    ClaudeScraper,
+    DeepSeekScraper,
+    DoubaoScraper,
+    GeminiScraper,
+    OpenAIScraper,
+)
 from scrapers.litellm_source import fetch_litellm_prices, _canonicalize
 from scripts import audit_pricing
 from utils import JsonMerger
@@ -42,6 +48,8 @@ SCRAPERS: Dict[str, Any] = {
     "claude": ClaudeScraper,
     "gemini": GeminiScraper,
     "openai": OpenAIScraper,
+    "deepseek": DeepSeekScraper,
+    "doubao": DoubaoScraper,
 }
 
 
@@ -142,12 +150,15 @@ def run(providers: List[str]) -> int:
     logger.info("--- Fetching litellm pricing catalog ---")
     litellm_data, litellm_counters = fetch_litellm_prices()
     if litellm_counters.get("fetch_succeeded"):
+        bp = litellm_counters["by_provider"]
         logger.info(
-            "litellm: kept=%d (claude=%d openai=%d gemini=%d) in %.2fs",
+            "litellm: kept=%d (claude=%d openai=%d gemini=%d deepseek=%d doubao=%d) in %.2fs",
             litellm_counters["kept"],
-            litellm_counters["by_provider"]["claude"],
-            litellm_counters["by_provider"]["openai"],
-            litellm_counters["by_provider"]["gemini"],
+            bp.get("claude", 0),
+            bp.get("openai", 0),
+            bp.get("gemini", 0),
+            bp.get("deepseek", 0),
+            bp.get("doubao", 0),
             litellm_counters["fetch_latency_s"],
         )
     else:

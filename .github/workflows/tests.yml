@@ -37,6 +37,17 @@ jobs:
       - name: Run pytest
         run: pytest -q --tb=short
 
+      # Issue #7: mypy as report-only, doesn't gate PRs yet. continue-on-error
+      # so it doesn't block while the existing untyped surface gets cleaned up.
+      # Tighten by removing continue-on-error once the warning count is manageable.
+      - name: Run mypy (report-only)
+        id: mypy
+        continue-on-error: true
+        run: |
+          mypy --config-file mypy.ini main.py scrapers/ scripts/ utils/ \
+            2>&1 | tee mypy-output.txt
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+
       - name: Write summary
         if: always()
         run: |
@@ -46,4 +57,16 @@ jobs:
             echo "✅ 全部通过" >> "$GITHUB_STEP_SUMMARY"
           else
             echo "❌ 有测试失败，看上方 step 输出" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "## 🔎 mypy (report-only)" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f mypy-output.txt ]; then
+            errs=$(grep -c "error:" mypy-output.txt || true)
+            echo "**$errs** mypy errors (not blocking — Issue #7 plan)" >> "$GITHUB_STEP_SUMMARY"
+            echo '<details><summary>Show output</summary>' >> "$GITHUB_STEP_SUMMARY"
+            echo '' >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+            head -100 mypy-output.txt >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+            echo '</details>' >> "$GITHUB_STEP_SUMMARY"
           fi

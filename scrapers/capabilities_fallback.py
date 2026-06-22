@@ -440,6 +440,65 @@ CAPABILITIES_FALLBACK = {
             "embedding",
         ],
     },
+    # -----------------------------------------------------------------------
+    # DeepSeek
+    # -----------------------------------------------------------------------
+    "deepseek": {
+        # litellm canonical ids (after _canonicalize strips the deepseek/ prefix)
+        "deepseek-chat": [
+            "text_generation", "translation", "code_generation",
+            "function_calling", "structured_output",
+        ],
+        "deepseek-reasoner": [
+            "text_generation", "translation", "reasoning",
+            "code_generation", "structured_output",
+        ],
+        "deepseek-coder": [
+            "text_generation", "code_generation", "structured_output",
+        ],
+        "deepseek-r1": [
+            "text_generation", "translation", "reasoning",
+            "code_generation", "structured_output",
+        ],
+        "deepseek-v3": [
+            "text_generation", "translation", "code_generation",
+            "function_calling", "structured_output",
+        ],
+        "deepseek-v3.2": [
+            "text_generation", "translation", "code_generation",
+            "function_calling", "structured_output",
+        ],
+        "deepseek-v4-flash": [
+            "text_generation", "translation", "code_generation",
+            "function_calling", "structured_output",
+        ],
+        "deepseek-v4-pro": [
+            "text_generation", "translation", "reasoning",
+            "code_generation", "function_calling", "structured_output",
+        ],
+    },
+    # -----------------------------------------------------------------------
+    # Doubao / 豆包 (Volcengine)
+    # -----------------------------------------------------------------------
+    "doubao": {
+        # Doubao Seed 2.0 family (latest as of 2026-02; price page on
+        # volcengine.com/docs/82379). litellm has the model ids registered
+        # but pricing fields null — see PRICING_FALLBACK["doubao"] below.
+        "doubao-seed-2-0-pro-260215": [
+            "text_generation", "translation", "code_generation",
+            "function_calling", "structured_output",
+        ],
+        "doubao-seed-2-0-lite-260215": [
+            "text_generation", "translation", "code_generation",
+            "structured_output",
+        ],
+        "doubao-seed-2-0-mini-260215": [
+            "text_generation", "translation",
+        ],
+        "doubao-seed-2-0-code-preview-260215": [
+            "text_generation", "code_generation", "structured_output",
+        ],
+    },
 }
 
 # ---------------------------------------------------------------------------
@@ -510,6 +569,23 @@ CONTEXT_WINDOW_DEFAULTS = {
         "text-embedding-3-large": 8191,
         "text-embedding-3-small": 8191,
         "text-embedding-ada-002": 8191,
+    },
+    "deepseek": {
+        "deepseek-chat": 64000,
+        "deepseek-reasoner": 64000,
+        "deepseek-coder": 16000,
+        "deepseek-r1": 65536,
+        "deepseek-v3": 65536,
+        "deepseek-v3.2": 131072,
+        "deepseek-v4-flash": 131072,
+        "deepseek-v4-pro": 131072,
+    },
+    "doubao": {
+        # Doubao Seed 2.0 family — 256k unified context per Volcengine docs
+        "doubao-seed-2-0-pro-260215": 262144,
+        "doubao-seed-2-0-lite-260215": 262144,
+        "doubao-seed-2-0-mini-260215": 32768,
+        "doubao-seed-2-0-code-preview-260215": 262144,
     },
 }
 
@@ -582,6 +658,22 @@ DISPLAY_NAMES = {
         "text-embedding-3-small": "Text Embedding 3 Small",
         "text-embedding-ada-002": "Text Embedding Ada 002",
     },
+    "deepseek": {
+        "deepseek-chat": "DeepSeek Chat",
+        "deepseek-reasoner": "DeepSeek Reasoner",
+        "deepseek-coder": "DeepSeek Coder",
+        "deepseek-r1": "DeepSeek R1",
+        "deepseek-v3": "DeepSeek V3",
+        "deepseek-v3.2": "DeepSeek V3.2",
+        "deepseek-v4-flash": "DeepSeek V4 Flash",
+        "deepseek-v4-pro": "DeepSeek V4 Pro",
+    },
+    "doubao": {
+        "doubao-seed-2-0-pro-260215": "Doubao Seed 2.0 Pro",
+        "doubao-seed-2-0-lite-260215": "Doubao Seed 2.0 Lite",
+        "doubao-seed-2-0-mini-260215": "Doubao Seed 2.0 Mini",
+        "doubao-seed-2-0-code-preview-260215": "Doubao Seed 2.0 Code (Preview)",
+    },
 }
 
 # ---------------------------------------------------------------------------
@@ -609,6 +701,20 @@ PROVIDER_DEFAULT_ENDPOINTS = {
             "endpoint_type": "chat_completions",
             "path": "/v1/chat/completions",
             "notes": "OpenAI chat format",
+        }
+    ],
+    "deepseek": [
+        {
+            "endpoint_type": "chat_completions",
+            "path": "/v1/chat/completions",
+            "notes": "DeepSeek API is OpenAI-compatible",
+        }
+    ],
+    "doubao": [
+        {
+            "endpoint_type": "chat_completions",
+            "path": "/api/v3/chat/completions",
+            "notes": "Volcengine Ark API, OpenAI-compatible",
         }
     ],
 }

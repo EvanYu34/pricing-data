@@ -262,7 +262,7 @@ class BaseScraper(abc.ABC):
     # ------------------------------------------------------------------
 
     @staticmethod
-    def discover_model_ids(soup: "BeautifulSoup", pattern: str) -> set:  # type: ignore[name-defined]
+    def discover_model_ids(soup: "BeautifulSoup", pattern: str) -> set:
         """
         在页面的 <code>、<pre>、<td>、<a> 标签中搜索匹配 pattern 的模型 ID。
         这是消除 _DISPLAY_TO_ID 硬编码字典维护成本的核心方法：
@@ -299,7 +299,7 @@ class BaseScraper(abc.ABC):
         return found
 
     @staticmethod
-    def extract_doc_text_for_model(soup: "BeautifulSoup", model_id: str, window: int = 800) -> str:  # type: ignore[name-defined]
+    def extract_doc_text_for_model(soup: "BeautifulSoup", model_id: str, window: int = 800) -> str:
         """
         从文档页中找到提及 model_id 的位置，提取其前后 window 个字符作为
         上下文文本，供 infer_capabilities() 做关键词扫描使用。

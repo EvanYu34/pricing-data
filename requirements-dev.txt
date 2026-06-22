@@ -1,6 +1,9 @@
-# Developer-only dependencies. NOT installed in CI (per plan v5 §9 — CI relies
-# on the audit gate to catch regressions; pytest is for local development).
+# Developer-only dependencies. NOT installed in update_pricing.yml CI (per plan
+# v5 §9 — that workflow relies on the audit gate). The tests.yml workflow DOES
+# install these so pytest + mypy run on every PR.
 # Install: pip install -r requirements-dev.txt
 -r requirements.txt
 pytest>=7.4
 pytest-cov>=4.1
+mypy>=1.7
+types-requests>=2.31
