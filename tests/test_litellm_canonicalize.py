@@ -36,6 +36,20 @@ from scrapers.litellm_source import _canonicalize
     # Multiple regional prefixes are not common but should be tolerated
     ("eu.anthropic.claude-haiku-4-5", "claude-haiku-4-5"),
     ("apac.anthropic.claude-opus-4-7", "claude-opus-4-7"),
+
+    # DeepSeek: deepseek/ prefix strip + version suffix is part of model id,
+    # MUST NOT be stripped (was a real regression — `deepseek-v3` collapsing
+    # to `deepseek` before the bedrock-family gate).
+    ("deepseek/deepseek-chat", "deepseek-chat"),
+    ("deepseek/deepseek-v3", "deepseek-v3"),
+    ("deepseek/deepseek-v3.2", "deepseek-v3.2"),
+    ("deepseek/deepseek-v4-pro", "deepseek-v4-pro"),
+    ("deepseek/deepseek-r1", "deepseek-r1"),
+    ("deepseek/deepseek-coder", "deepseek-coder"),
+
+    # Doubao (Volcengine): volcengine/ prefix strip
+    ("volcengine/doubao-seed-2-0-pro-260215", "doubao-seed-2-0-pro-260215"),
+    ("volcengine/doubao-seed-2-0-lite-260215", "doubao-seed-2-0-lite-260215"),
 ])
 def test_canonicalize_examples(raw, expected):
     assert _canonicalize(raw) == expected
