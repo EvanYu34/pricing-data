@@ -928,6 +928,51 @@ PRICING_FALLBACK = {
             "notes": "Pro tier. Source: openai.com/api/pricing (o1-pro line)",
         },
     },
+    # -----------------------------------------------------------------------
+    # Doubao / 豆包 (Volcengine)
+    # -----------------------------------------------------------------------
+    # litellm volcengine entries exist but ship `null` for the four
+    # doubao-seed-2-0-* chat models, so the live-overlay path can't fill
+    # these. USD figures below are converged across multiple secondary
+    # trackers (EvoLink / TokenMix / CloudPrice / Apiyi) — Volcengine
+    # publishes RMB on their Chinese-only docs page (403 to outside web
+    # fetch); when their JSON-API becomes scrape-able, swap to live source.
+    # Re-verify quarterly.
+    "doubao": {
+        "doubao-seed-2-0-pro-260215": {
+            "input_per_1m_tokens": 0.47,
+            "output_per_1m_tokens": 2.37,
+            "notes": (
+                "Source: 3rd-party (evolink.ai/blog/doubao-seed-2-0-review-benchmarks-pricing). "
+                "Official RMB at www.volcengine.com/docs/82379/1099475"
+            ),
+        },
+        "doubao-seed-2-0-lite-260215": {
+            "input_per_1m_tokens": 0.13,
+            "output_per_1m_tokens": 0.76,
+            "notes": (
+                "Source: 3rd-party (evolink.ai/blog/doubao-seed-2-0-review-benchmarks-pricing). "
+                "Official RMB at www.volcengine.com/docs/82379/1099475"
+            ),
+        },
+        "doubao-seed-2-0-mini-260215": {
+            "input_per_1m_tokens": 0.10,
+            "output_per_1m_tokens": 0.40,
+            "notes": (
+                "Source: 3rd-party (tokenmix.ai/blog/doubao-api-getting-started + "
+                "help.apiyi.com seed-2-0 comparison). Official RMB at "
+                "www.volcengine.com/docs/82379/1099475"
+            ),
+        },
+        "doubao-seed-2-0-code-preview-260215": {
+            "input_per_1m_tokens": 0.30,
+            "output_per_1m_tokens": 1.20,
+            "notes": (
+                "Source: 3rd-party (evolink.ai/blog/doubao-seed-2-0-review-benchmarks-pricing). "
+                "Preview tier — official RMB at www.volcengine.com/docs/82379/1099475"
+            ),
+        },
+    },
 }
 
 
