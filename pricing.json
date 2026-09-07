@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-31T03:00:45Z",
+  "last_updated": "2026-09-07T02:25:45Z",
   "schema_version": "2.0",
   "attribution": {
     "litellm": "https://github.com/BerriAI/litellm — MIT"
@@ -45,8 +45,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -77,8 +77,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -109,8 +109,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -141,8 +141,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -173,8 +173,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -205,8 +205,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -237,8 +237,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -277,8 +277,8 @@
             "bedrock",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -318,8 +318,8 @@
             "bedrock",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -355,8 +355,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -398,8 +398,8 @@
             "bedrock_converse",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -439,8 +439,8 @@
             "bedrock",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -481,8 +481,8 @@
             "bedrock",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -522,8 +522,8 @@
             "bedrock",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -563,8 +563,8 @@
             "anthropic",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -605,8 +605,8 @@
             "bedrock_converse",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -683,8 +683,8 @@
             "anthropic",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -725,8 +725,8 @@
             "bedrock_converse",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -888,8 +888,8 @@
             "bedrock_converse",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -929,8 +929,8 @@
             "anthropic",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -971,8 +971,8 @@
             "bedrock_converse",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -1013,8 +1013,8 @@
             "bedrock_converse",
             "vertex_ai-anthropic_models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         }
       ]
@@ -1063,8 +1063,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "stale",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -1100,8 +1100,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "stale",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -1137,8 +1137,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "stale",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -1173,8 +1173,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "stale",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -1210,8 +1210,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "stale",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -1247,8 +1247,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "stale",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -1288,8 +1288,8 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -1325,8 +1325,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "stale",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -1365,8 +1365,8 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -1402,8 +1402,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "stale",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -1439,8 +1439,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "stale",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -1482,8 +1482,8 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -1521,8 +1521,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -1562,8 +1562,8 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -1634,10 +1634,10 @@
           "multilingual": true,
           "is_deprecated": false,
           "notes": "",
-          "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
-          "verified_source": "litellm"
+          "source": "stale",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-2.5-flash-preview-09-2025",
@@ -1676,8 +1676,8 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -1718,8 +1718,8 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -1830,8 +1830,8 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -1869,8 +1869,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -1910,8 +1910,8 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -1949,8 +1949,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -1990,8 +1990,8 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -2028,8 +2028,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -2068,8 +2068,8 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -2143,10 +2143,10 @@
           "multilingual": true,
           "is_deprecated": false,
           "notes": "",
-          "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
-          "verified_source": "litellm"
+          "source": "stale",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-3.1-pro",
@@ -2224,8 +2224,8 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -2266,8 +2266,8 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -2307,8 +2307,8 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -2372,10 +2372,10 @@
           "multilingual": true,
           "is_deprecated": false,
           "notes": "",
-          "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
-          "verified_source": "litellm"
+          "source": "stale",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
+          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-3.6-flash",
@@ -2415,8 +2415,8 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -2457,8 +2457,50 @@
             "gemini",
             "vertex_ai-language-models"
           ],
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
+          "verified_source": "litellm"
+        },
+        {
+          "model_id": "gemini-3.8-flash",
+          "display_name": "gemini-3.8-flash",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "translation",
+            "text_to_speech",
+            "image_understanding",
+            "document_processing",
+            "code_generation",
+            "function_calling",
+            "structured_output"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": 0.75,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 3.75,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": 0.075,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "generate_content",
+              "path": "/v1beta/models/{model}:generateContent",
+              "notes": "Google native format"
+            }
+          ],
+          "multilingual": true,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "litellm",
+          "source_detail": [
+            "gemini",
+            "vertex_ai-language-models"
+          ],
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -2653,8 +2695,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -2688,8 +2730,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -2723,8 +2765,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -2757,8 +2799,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -2794,8 +2836,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -2831,8 +2873,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -2868,8 +2910,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -2977,8 +3019,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -3014,8 +3056,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -3051,8 +3093,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -3088,8 +3130,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -3122,8 +3164,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -3158,8 +3200,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -3194,8 +3236,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -3453,8 +3495,10 @@
           "context_window_tokens": null,
           "capabilities": [
             "text_generation",
-            "text_to_speech",
+            "translation",
+            "image_understanding",
             "code_generation",
+            "embedding",
             "function_calling"
           ],
           "pricing": {
@@ -3473,12 +3517,12 @@
               "notes": "OpenAI chat format"
             }
           ],
-          "multilingual": false,
+          "multilingual": true,
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -3511,8 +3555,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -3544,8 +3588,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -3577,8 +3621,75 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
+          "verified_source": "litellm"
+        },
+        {
+          "model_id": "gpt-6",
+          "display_name": "gpt-6",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "text_to_speech",
+            "code_generation",
+            "function_calling"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": null,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": null,
+            "cache_write_per_1m_tokens": null,
+            "cache_read_per_1m_tokens": null,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "scraper",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
+          "verified_source": "scraper"
+        },
+        {
+          "model_id": "gpt-6-astra",
+          "display_name": "gpt-6-astra",
+          "context_window_tokens": null,
+          "capabilities": [
+            "text_generation",
+            "code_generation",
+            "function_calling"
+          ],
+          "pricing": {
+            "currency": "USD",
+            "input_per_1m_tokens": 10.0,
+            "input_per_1m_tokens_above_200k": null,
+            "output_per_1m_tokens": 50.0,
+            "cache_write_per_1m_tokens": 12.5,
+            "cache_read_per_1m_tokens": 1.0,
+            "notes": ""
+          },
+          "api_endpoints": [
+            {
+              "endpoint_type": "chat_completions",
+              "path": "/v1/chat/completions",
+              "notes": "OpenAI chat format"
+            }
+          ],
+          "multilingual": false,
+          "is_deprecated": false,
+          "notes": "",
+          "source": "litellm",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -3614,8 +3725,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "scraper",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -3649,8 +3760,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -3684,8 +3795,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -3716,8 +3827,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "stale",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -3748,8 +3859,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "stale",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -3780,8 +3891,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "stale",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -3812,8 +3923,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "stale",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -3881,8 +3992,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -3915,8 +4026,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -3949,8 +4060,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -4071,8 +4182,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -4104,8 +4215,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -4139,8 +4250,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -4174,8 +4285,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -4209,8 +4320,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -4244,8 +4355,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -4279,8 +4390,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         },
         {
@@ -4315,8 +4426,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "litellm",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "litellm"
         }
       ]
@@ -4363,8 +4474,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "stale",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -4397,8 +4508,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "stale",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -4429,8 +4540,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "stale",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         },
         {
@@ -4464,8 +4575,8 @@
           "is_deprecated": false,
           "notes": "",
           "source": "stale",
-          "last_seen_run": "2026-08-31",
-          "last_verified_at": "2026-08-31T03:00:45Z",
+          "last_seen_run": "2026-09-07",
+          "last_verified_at": "2026-09-07T02:25:45Z",
           "verified_source": "scraper"
         }
       ]
