@@ -1289,38 +1289,6 @@
       },
       "models": [
         {
-          "model_id": "contributor",
-          "display_name": "contributor",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": 1.0,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": 2.0,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "litellm",
-          "last_seen_run": "2026-11-02",
-          "last_verified_at": "2026-11-02T03:56:21Z",
-          "verified_source": "scraper"
-        },
-        {
           "model_id": "gemini-1.0-pro",
           "display_name": "Gemini 1.0 Pro",
           "context_window_tokens": 32760,
@@ -1882,44 +1850,6 @@
           "verified_source": "scraper"
         },
         {
-          "model_id": "gemini-2.5-flash-models",
-          "display_name": "gemini-2.5-flash-models",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "text_to_speech",
-            "image_understanding",
-            "document_processing",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-11-09",
-          "last_verified_at": "2026-11-09T04:11:13Z",
-          "verified_source": "scraper"
-        },
-        {
           "model_id": "gemini-2.5-flash-native-audio-preview-12-2025",
           "display_name": "gemini-2.5-flash-native-audio-preview-12-2025",
           "context_window_tokens": null,
@@ -2033,265 +1963,6 @@
           "verified_source": "litellm"
         },
         {
-          "model_id": "gemini-2.5-pro-models",
-          "display_name": "gemini-2.5-pro-models",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "text_to_speech",
-            "image_understanding",
-            "document_processing",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-11-09",
-          "last_verified_at": "2026-11-09T04:11:13Z",
-          "verified_source": "scraper"
-        },
-        {
-          "model_id": "gemini-25-flash",
-          "display_name": "gemini-25-flash",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "text_to_speech",
-            "image_understanding",
-            "document_processing",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-11-09",
-          "last_verified_at": "2026-11-09T04:11:13Z",
-          "verified_source": "scraper"
-        },
-        {
-          "model_id": "gemini-25-flash-lite",
-          "display_name": "gemini-25-flash-lite",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "text_to_speech",
-            "image_understanding",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-11-09",
-          "last_verified_at": "2026-11-09T04:11:13Z",
-          "verified_source": "scraper"
-        },
-        {
-          "model_id": "gemini-25-pro",
-          "display_name": "gemini-25-pro",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "image_understanding",
-            "document_processing",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-11-09",
-          "last_verified_at": "2026-11-09T04:11:13Z",
-          "verified_source": "scraper"
-        },
-        {
-          "model_id": "gemini-3",
-          "display_name": "gemini-3",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-11-09",
-          "last_verified_at": "2026-11-09T04:11:13Z",
-          "verified_source": "scraper"
-        },
-        {
-          "model_id": "gemini-3-5-flash-lite",
-          "display_name": "gemini-3-5-flash-lite",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "text_to_speech",
-            "image_understanding",
-            "image_generation",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-11-09",
-          "last_verified_at": "2026-11-09T04:11:13Z",
-          "verified_source": "scraper"
-        },
-        {
-          "model_id": "gemini-3-8-flash",
-          "display_name": "gemini-3-8-flash",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "translation",
-            "text_to_speech",
-            "image_understanding",
-            "document_processing",
-            "code_generation",
-            "function_calling",
-            "structured_output"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-11-09",
-          "last_verified_at": "2026-11-09T04:11:13Z",
-          "verified_source": "scraper"
-        },
-        {
           "model_id": "gemini-3-flash",
           "display_name": "gemini-3-flash",
           "context_window_tokens": null,
@@ -2369,39 +2040,6 @@
           "last_seen_run": "2026-11-09",
           "last_verified_at": "2026-11-09T04:11:13Z",
           "verified_source": "litellm"
-        },
-        {
-          "model_id": "gemini-3-models",
-          "display_name": "gemini-3-models",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-11-09",
-          "last_verified_at": "2026-11-09T04:11:13Z",
-          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-3-pro-image",
@@ -2938,40 +2576,6 @@
           "verified_source": "scraper"
         },
         {
-          "model_id": "gemini-3.6",
-          "display_name": "gemini-3.6",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "image_understanding",
-            "image_generation",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-11-09",
-          "last_verified_at": "2026-11-09T04:11:13Z",
-          "verified_source": "scraper"
-        },
-        {
           "model_id": "gemini-3.6-flash",
           "display_name": "gemini-3.6-flash",
           "context_window_tokens": null,
@@ -3054,39 +2658,6 @@
           "last_seen_run": "2026-10-05",
           "last_verified_at": "2026-10-05T03:37:01Z",
           "verified_source": "litellm"
-        },
-        {
-          "model_id": "gemini-3.8",
-          "display_name": "gemini-3.8",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-11-09",
-          "last_verified_at": "2026-11-09T04:11:13Z",
-          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-3.8-flash",
@@ -3198,39 +2769,6 @@
           "verified_source": "scraper"
         },
         {
-          "model_id": "gemini-4",
-          "display_name": "gemini-4",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "document_processing",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-11-09",
-          "last_verified_at": "2026-11-09T04:11:13Z",
-          "verified_source": "scraper"
-        },
-        {
           "model_id": "gemini-4-argon",
           "display_name": "gemini-4-argon",
           "context_window_tokens": null,
@@ -3262,39 +2800,6 @@
           "last_seen_run": "2026-11-09",
           "last_verified_at": "2026-11-09T04:11:13Z",
           "verified_source": "litellm"
-        },
-        {
-          "model_id": "gemini-4-models",
-          "display_name": "gemini-4-models",
-          "context_window_tokens": null,
-          "capabilities": [
-            "text_generation",
-            "text_to_speech",
-            "code_generation"
-          ],
-          "pricing": {
-            "currency": "USD",
-            "input_per_1m_tokens": null,
-            "input_per_1m_tokens_above_200k": null,
-            "output_per_1m_tokens": null,
-            "cache_write_per_1m_tokens": null,
-            "cache_read_per_1m_tokens": null,
-            "notes": ""
-          },
-          "api_endpoints": [
-            {
-              "endpoint_type": "generate_content",
-              "path": "/v1beta/models/{model}:generateContent",
-              "notes": "Google native format"
-            }
-          ],
-          "multilingual": true,
-          "is_deprecated": false,
-          "notes": "",
-          "source": "scraper",
-          "last_seen_run": "2026-11-09",
-          "last_verified_at": "2026-11-09T04:11:13Z",
-          "verified_source": "scraper"
         },
         {
           "model_id": "gemini-omni-flash",
