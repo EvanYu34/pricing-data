@@ -90,6 +90,7 @@ def _is_litellm_entry_for(provider_key: str, raw_key: str) -> bool:
 _REGIONAL_RE = re.compile(r"^(us|eu|apac|jp|au|global|sa|me|af|ca|in)\.")
 _VERSION_RE = re.compile(r"-v\d+(:\d+)?$")
 _LATEST_RE = re.compile(r"-latest$")
+_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 def _canonicalize(key: str) -> str:
@@ -153,6 +154,11 @@ def _convert_pricing(entry: Dict[str, Any]) -> Dict[str, Any]:
         "cache_read_per_1m_tokens": per_m("cache_read_input_token_cost"),
         "notes": "",
     }
+    # 下线日期 (litellm 的 deprecation_date, "YYYY-MM-DD")。内部字段, 不写进 pricing.json 的
+    # pricing 里: main._overlay_litellm_prices 去掉它, main._apply_litellm_deprecations 用它标 is_deprecated。
+    dep = entry.get("deprecation_date")
+    if isinstance(dep, str) and _DATE_RE.match(dep.strip()):
+        out["_deprecation_date"] = dep.strip()
     return out
 
 
@@ -210,6 +216,14 @@ def _accumulate(
             # Both non-None — keep the higher-priority entry's value.
             if new_priority < existing_priority:
                 existing[field] = new_v
+
+    # 下线日期: 只认优先级最高的那条 (官方 API) 写的。Vertex / Bedrock 上同一个模型的下线日期
+    # 常常更早 (gemini-2.5-flash-lite: Vertex 2026-10-20, Gemini API 没写), 不能拿来标官方 API 的。
+    if new_priority < existing_priority:
+        if new_pricing.get("_deprecation_date"):
+            existing["_deprecation_date"] = new_pricing["_deprecation_date"]
+        else:
+            existing.pop("_deprecation_date", None)
 
     if new_litellm_provider not in existing_providers:
         existing_providers.append(new_litellm_provider)
