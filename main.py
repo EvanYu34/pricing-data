@@ -18,9 +18,9 @@ import logging
 import os
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 from scrapers import (
     ClaudeScraper,
@@ -131,6 +131,7 @@ def _overlay_litellm_prices(
             new_pricing["notes"] = existing_notes
         # Strip internal fields that shouldn't leak into pricing.json.
         new_pricing.pop("_litellm_providers_seen", None)
+        new_pricing.pop("_deprecation_date", None)
         # Note: `source` and `source_detail` are top-level model fields, not under pricing.
         model["source"] = new_pricing.pop("source", "litellm")
         if "source_detail" in new_pricing:
@@ -138,6 +139,41 @@ def _overlay_litellm_prices(
         model["pricing"] = new_pricing
         count += 1
     return count
+
+
+# litellm 标的下线日期前这么多天就标 is_deprecated: 周更一周一次, 提前两个周期 (周一跑, 晚一次也赶得上),
+# 下游 (AI 选择器) 在厂商真正关掉之前就不列了
+DEPRECATION_LEAD_DAYS = 14
+
+
+def _apply_litellm_deprecations(
+    merged: Dict[str, Any],
+    litellm_data: Dict[str, Dict[str, Dict[str, Any]]],
+    today: Optional[datetime] = None,
+) -> List[str]:
+    """litellm 写了 deprecation_date、并且已经到了 (提前 DEPRECATION_LEAD_DAYS 天) 的模型
+    → is_deprecated = True。只会标 True, 不会把别处标的 True 改回 False。
+
+    在 merge 之后跑, 所以老条目 (这次抓取器没抓到、只留在 pricing.json 里的) 也会被标上。
+    返回新标上的 "provider/model_id" 列表 (日志用)。
+    """
+    today = today or datetime.now(timezone.utc)
+    cutoff = (today + timedelta(days=DEPRECATION_LEAD_DAYS)).strftime("%Y-%m-%d")
+    flagged: List[str] = []
+    for provider, block in (merged.get("sources") or {}).items():
+        lit = litellm_data.get(provider) or {}
+        if not lit:
+            continue
+        for model in block.get("models") or []:
+            mid = model.get("model_id")
+            if not mid or model.get("is_deprecated"):
+                continue
+            entry = lit.get(_canonicalize(mid)) or lit.get(mid) or {}
+            dep = entry.get("_deprecation_date")
+            if dep and dep <= cutoff:
+                model["is_deprecated"] = True
+                flagged.append(f"{provider}/{mid}")
+    return flagged
 
 
 def run(providers: List[str]) -> int:
@@ -206,6 +242,9 @@ def run(providers: List[str]) -> int:
     # ----- Step 4: field-level merge with old pricing.json -----
     merger = JsonMerger()
     merged_data = merger.merge(existing_data, new_results)
+    flagged = _apply_litellm_deprecations(merged_data, litellm_data)
+    if flagged:
+        logger.info("litellm deprecation_date → is_deprecated: %s", ", ".join(flagged))
     diff = merger.diff_summary(existing_data, merged_data)
 
     # ----- Step 5: write pricing.json to disk first so audit reads the fresh data,
