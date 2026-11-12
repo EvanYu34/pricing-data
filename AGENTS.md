@@ -61,6 +61,8 @@ FORCE_COMMIT=true python main.py
 
 - **`pricing.json` 是对外契约**：webapp/客户端会读取它的字段名。改 schema 前必须确认下游消费者（目前已知：`personal-stack-shared/wrapper_client` 可能读取定价）。
   - `wrapper_client` 用它给各工具的 AI 选择器排模型目录 (pricing-data 拉得到时整份替换内置目录); 没选过模型时各工具用的 Gemini 默认 `ai_selector.DEFAULT_GEMINI_MODEL` (2026-11 写死 `gemini-3.8-flash`) 是按这份目录挑的第一个 flash 档 —— 这里删掉 / 改名那个模型, 要同步改 shared 的常量。
+- **Gemini 抓取器会扫出残缺 id** (`gemini-25-pro` 丢点、`gemini-3-8-flash` 点变横杠、`gemini-3` 只有系列名、`gemini-3-models` 分类标题、`contributor`):
+  `utils/noise_filter.py` 的 `_GEMINI_MALFORMED_RE` 在 merge 时连老条目一起滤掉 (2026-11-12 用户同意删这些条目)。真 id 主版本一位数 + 可选「.小版本」。
 - **`requirements-dev.txt` 在 CI 不装**：CI 靠 `audit_pricing.py` 兜底，不跑 pytest。本地开发才装 pytest。
 - **audit 失败默认回滚**：`main.py` 写完 `pricing.json` 后跑 audit，若失败且非 `FORCE_COMMIT`，自动还原。`drift_check` 用 `DRY_RUN=true` 走相同审计但永远不写。
 - **`.commit_message` 和 `AUDIT_REPORT.md` 是运行时产物**：都在 `.gitignore`，本地跑会出现在工作目录但不会被提交。CI 用它们生成提交信息和 job summary。

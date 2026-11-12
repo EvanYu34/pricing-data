@@ -21,6 +21,24 @@ from utils.noise_filter import is_noise_model_id, filter_provider_models
     ("gpt-4o-audio-preview", False),  # multimodal chat with audio inputs — keep
     ("gemini-2.5-pro", False),
     ("gemini-2.0-flash", False),
+    ("gemini-3.8-flash", False),
+    ("gemini-3.1-pro-preview", False),
+    ("gemini-3.5-flash-lite", False),
+    ("gemini-4-argon", False),
+    ("gemini-3-flash-preview", False),
+    ("gemini-3-pro-preview", False),
+
+    # Gemini 抓取器扫出来的残缺 id — drop
+    ("gemini-25-pro", True),
+    ("gemini-25-flash-lite", True),
+    ("gemini-3-8-flash", True),
+    ("gemini-3-5-flash-lite", True),
+    ("gemini-3", True),
+    ("gemini-3.6", True),
+    ("gemini-4", True),
+    ("gemini-3-models", True),
+    ("gemini-2.5-flash-models", True),
+    ("contributor", True),
     ("claude-3-5-sonnet-20241022", False),
 
     # Speech / transcription — drop

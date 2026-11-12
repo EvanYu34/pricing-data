@@ -42,6 +42,8 @@ TIER_ALIASES = {
     # are scraper artifacts from upcoming-product blurbs, not real IDs.
     "gpt-5-codex", "gpt-5.1-codex", "gpt-5.1-codex-max",
     "gpt-5.2-codex", "gpt-5.3-codex",
+    # Gemini 页面上的一个词, 被 merge 配上了一组价格 (1.0 / 2.0), 出现在 AI 选择器里
+    "contributor",
 }
 
 
@@ -64,6 +66,16 @@ def _has_whitespace(model_id: str) -> bool:
 # hyphen separator is the giveaway.
 import re as _re
 _JUNK_RE = _re.compile(r"^[a-z]\d+[a-z]+$")  # matches o51u, o6f, etc.
+
+# Gemini 抓取器从文档页 (标题 / 锚点 / 分类名) 扫出来的、不是真 API id 的形状 (2026-11):
+# - gemini-25-pro / gemini-25-flash-lite: 版本号丢了点 (真 id gemini-2.5-pro)
+# - gemini-3-8-flash / gemini-3-5-flash-lite: 点变成横杠 (真 id gemini-3.8-flash)
+# - gemini-3 / gemini-3.6 / gemini-4: 只有系列名, 没有 flash / pro 这种档位
+# - gemini-3-models / gemini-2.5-flash-models: 文档的分类标题
+# 真 id 的主版本都是一位数 + 可选「.小版本」, 例如 gemini-3.1-pro-preview / gemini-4-argon。
+_GEMINI_MALFORMED_RE = _re.compile(
+    r"^gemini-(\d{2,}-|\d-\d+-|\d+(\.\d+)?$)|^gemini-.*-models$"
+)
 
 
 def _is_non_ascii(model_id: str) -> bool:
@@ -92,6 +104,8 @@ def is_noise_model_id(model_id: str) -> bool:
     if _is_all_digits_or_punct(model_id):
         return True
     if _JUNK_RE.match(model_id.casefold()):
+        return True
+    if _GEMINI_MALFORMED_RE.match(model_id.casefold()):
         return True
     # Whitespace in model_id = scraper tokenization bug (e.g. "gemini 2.5 flash").
     # Real Google / OpenAI / Anthropic API IDs only use [a-z0-9.-].
